@@ -11,7 +11,8 @@
 
     <div class="site-container">
 
-      <header class="site-header">
+      <!-- Navbar -->
+      <header>
         {@|apply menu.block}
         {@|apply navbar.block}
       </header>
@@ -21,9 +22,9 @@
        {squarespace.main-content}
       </main>
 
-      <!--Footer with open block field -->
-      <footer class="site-footer">
-        <squarespace:block-field id="footerBlocks" columns="12" />
+      <!--Footer -->
+      <footer>
+
       </footer>
 
     </div>
