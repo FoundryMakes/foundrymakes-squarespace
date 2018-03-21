@@ -1,0 +1,107 @@
+/* Variables for navbar height
+***************************************************/
+@small-navbar: 70px;
+@large-navbar: 120px;
+
+/* Header component
+***************************************************/
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: @z-navbar;
+  opacity: 0.97;
+  background-color: @white;
+  display: flex;
+  align-items: center;
+
+  @media @for-phone-only {
+    height: @small-navbar;
+  }
+  @media @for-tablet-portrait-up {
+    height: @small-navbar;
+  }
+  @media @for-tablet-landscape-up {
+    height: @large-navbar;
+  }
+}
+
+.navbar-inner {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row;
+
+  @media @for-phone-only {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  @media @for-tablet-portrait-up {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  @media @for-tablet-landscape-up {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+}
+
+/* Navbar logo swap
+***************************************************/
+.navbar__logo {
+  height: 100%;
+}
+
+.navbar__logo-full {
+  height: 100%;
+  @media @for-phone-only {display: none;}
+  @media @for-tablet-portrait-up {display: block;}
+  @media @for-tablet-landscape-up {display: block;}
+}
+
+.navbar__logo-letter {
+  height: 100%;
+  @media @for-phone-only {display: block;}
+  @media @for-tablet-portrait-up {display: none;}
+  @media @for-tablet-landscape-up {display: none;}
+}
+
+/* Hamburger menu
+***************************************************/
+.navbar__menu {
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar__menu-hamburger {
+  @media @for-phone-only {width: 24px;}
+  @media @for-tablet-portrait-up {width: 28px;}
+}
+
+/* Move the content container below the navbar
+***************************************************/
+.content-container {
+  @media @for-phone-only {top: @small-navbar;}
+  @media @for-tablet-portrait-up {top: @small-navbar;}
+  @media @for-tablet-landscape-up {top: @large-navbar;}
+}
+
+/* Headroom styles
+***************************************************/
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
