@@ -1,0 +1,15 @@
+{
+  "name": "foundrymakes-ss",
+  "version": "1.0.0",
+  "description": "a Squarespace template for Foundry",
+  "main": "site.region",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://foundrymakes-ss.squarespace.com/template.git"
+  },
+  "author": "Jason Spidle",
+  "license": "MIT"
+}
