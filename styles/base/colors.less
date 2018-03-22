@@ -1,9 +1,17 @@
 /* Foundry colors
 ***************************************************/
-@blue: #00334e;
-@red: #ef4135;
-@lightgray: #f2f2f2;
+@blue: #00334E;
+@red: #EF4135;
+//tweak: { type: 'color', title: 'Light Gray', target: 'body', category: 'Grays' }
+@lightgray: #F2F2F2;
+//tweak: { type: 'color', title: 'Medium Gray', target: 'body', category: 'Grays' }
 @mediumgray: #D1D3D4;
-@white: #ffffff;
-@slate: #5c6f7b;
+//tweak: { type: 'color', title: 'Dark Gray', target: 'body', category: 'Grays' }
+@darkgray: #4D4D4D;
+@white: #FFFFFF;
+@slate: #5C6F7B;
 @lightblue: #1581A1;
+
+@colors: @blue, @red, @lightgray, @mediumgray, @darkgray, @white, @slate, @lightblue;
+@names: blue, red, lightgray, mediumgray, darkgray, white, slate, lightblue;
+@length : length(@colors);
