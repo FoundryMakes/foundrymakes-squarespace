@@ -22,7 +22,7 @@
       <div>
         <div class="util__z-above-overlay text__hero ">
           <h1 class="text__headline">Welcome to Foundry</h1>
-          <h1 class="text__subheadline">We design and build custom digital products that help companies grow.</h1>
+          <h1 class="text__subheadline">{collection.description|safe}</h1>
         </div>
         <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" class="util__grayscale">
           <source src="http://foundrymakes.com/uploads/video/t9VuOY7H6hPP0NuS.webm" type="video/webm"/>
