@@ -1,0 +1,129 @@
+/* Specific styles for a single blog post
+***************************************************/
+.blog-post {
+  .post-nav {
+    font-family: @medium-font;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      color: @blue;
+
+      path {
+        fill: @blue;
+      }
+      &:hover {
+        .arrow {
+          fill: @red;
+        }
+        color: @red;
+      }
+    }
+    .previous span {
+      margin-left: 15px;
+    }
+    .next span {
+      margin-right: 15px;
+    }
+  }
+  .body {
+    padding: 20px 70px;
+    @media @for-phone-only {
+      padding: 20px 6vw;
+    }
+    p {
+      font-family: @regular-font;
+      color: @blue;
+
+      @media @for-phone-only {font-size: 4.25vw;}
+      @media @for-tablet-portrait-up {font-size: 1.75vw;}
+
+      a {
+        color: @red;
+        text-decoration: none;
+      }
+    }
+    img {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: block;
+      margin: auto;
+      max-width: 60%;
+      height: auto;
+    }
+    iframe {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: block;
+      margin: auto;
+      max-width: 60%;
+    }
+    h1, h2, h3 {
+      color: @red;
+      font-family: @bold-font;
+    }
+  }
+  .post-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80%;
+  }
+  .author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: @white;
+    font-family: @light-font;
+  }
+  .byline {
+    text-align: center;
+    font-size: 1em;
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+  }
+  .author-icon {
+    padding: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: @white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .text__tag {
+    color: @white;
+    font-family: @medium-font;
+    text-transform: uppercase;
+  }
+  .text__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    .text__tag {
+      text-align: center;
+    }
+    .text__headline {
+      color: @white;
+      font-family: @regular-font;
+      text-align: center;
+    }
+  }
+}

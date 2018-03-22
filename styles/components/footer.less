@@ -1,3 +1,150 @@
+/* Styles for the footer
+***************************************************/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 340px;
+  background-color: @blue;
+  color: @white;
+  font-family: @light-font;
+  font-size: 16px;
+  line-height: 28px;
+
+  @media @for-phone-only {
+    padding: 4vh;
+  }
+  @media @for-tablet-portrait-up {
+    padding: 4vw;
+  }
+}
+
+.footer__lettermark {
+  margin-bottom: 35px;
+  height: 50px;
+}
+
+.footer__lettermark-icon {
+  height: 100%;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.footer__contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.footer__link {
+  color: @white;
+  text-decoration: none;
+  font-family: @light-font;
+  transition: all 0.4s ease;
+
+  &:active,
+  &:visited {
+    color: @white;
+  }
+
+  &:hover {
+    color: @red;
+  }
+}
+
+.footer__link-item {
+  &:after {
+    content: '•';
+    margin: 0 5px;
+  }
+
+  &:last-child:after {
+    content: '';
+  }
+}
+
+/* Styles for the Mailchimp form
+***************************************************/
+.footer__subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .error {
+    text-align: center;
+    color: @red;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  input {
+    flex: 1 0 auto;
+    font-family: @light-font, @generic-fonts;
+    color: @white;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: none;
+    border-width: 0;
+    border-color: transparent;
+    border: 1px solid @white;
+    display: block;
+    max-width: 350px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+
+    &::after,
+    &::before {
+      box-sizing: border-box;
+    }
+
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 0 white inset;
+      box-shadow: 0 0 0 0 white inset;
+    }
+
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  button {
+    flex: none;
+    font-family: @regular-font, @generic-fonts;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 7px 30px 7px 30px;
+    border-radius: 50px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    border: 1px solid @white;
+    color: @white;
+
+    &:hover {
+      background: @white;
+      color: @blue;
+      transition: all .4s ease;
+    }
+  }
+}
+
 /* Social media icons
 ***************************************************/
 .footer__social {

@@ -1,0 +1,66 @@
+/* Leadership photos on the about page
+***************************************************/
+.leadership-photos {
+  display: flex;
+  width:100%;
+
+  @media @for-phone-only {
+    flex-flow: column;
+  }
+  @media @for-tablet-portrait-up {
+    flex-flow: row;
+  }
+}
+
+.leadership-photos__tile {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  @media @for-phone-only {
+    flex: 0 0 100%;
+  }
+  @media @for-tablet-portrait-up {
+    flex: 0 0 33%;
+  }
+
+  img {
+    border-radius: 100%;
+
+    @media @for-phone-only {
+      width: 75%;
+      margin-top: 6vh;
+      margin-bottom: 3vh;
+    }
+    @media @for-tablet-portrait-up {
+      width: 65%;
+      margin-top: 6vw;
+      margin-bottom: 3vw;
+    }
+  }
+
+  h3 {
+    font-family: @bold-font, @generic-fonts;
+    color: @blue;
+    margin: 0;
+    @media @for-phone-only {font-size: 6vw;}
+    @media @for-tablet-portrait-up {font-size: 2vw;}
+  }
+  h4 {
+    font-family: @medium-font, @generic-fonts;
+    text-transform: uppercase;
+    color: @blue;
+    margin: 0;
+    @media @for-phone-only {
+      font-size: 5vw;
+      padding-top: 1vh;
+      padding-bottom: 5vh;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 1.25vw;
+      padding-top: 0.5vw;
+      padding-bottom: 3vw;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+/* Styles for the blog
+***************************************************/
+.blog {
+  font-family: @medium-font;
+  .blog-grid {
+    margin-top: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .blog-post {
+    flex: 0 1 400px;
+    img {
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
+      color: @blue;
+      margin: 20px 20px 60px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .post-tag {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .blog-title {
+    margin-top: 0;
+    text-align: center;
+    color: @red;
+    text-transform: uppercase;
+  }
+  .short-body {
+    color: @blue;
+    text-align: center;
+    font-size: 18px;
+  }
+}

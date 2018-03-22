@@ -1,0 +1,57 @@
+/* Custom styles for product design workshop page
+***************************************************/
+.workshop {
+
+  .games-begin .grid__col-fixed {
+    position: relative;
+
+    @media @for-phone-only {
+      flex: 0 0 auto;
+      height: initial;
+    }
+
+    @media @for-tablet-portrait-up {
+      flex: 1;
+      height: initial;
+    }
+  }
+
+  .walk-away-with .text__hero {
+      @media @for-phone-only {
+        padding: 3vh 4vh;
+      }
+
+      @media @for-tablet-portrait-up {
+        padding: 4vw 9vw;
+      }
+  }
+
+  .whiteboard {
+    display: flex;
+    box-sizing: border-box;
+    height: inherit;
+
+    svg#whiteboard {
+      stroke-width: 5;
+      stroke: @blue;
+    }
+
+    @media @for-phone-only {
+      padding: 1vh 4vh 5vh 4vh;
+
+      svg#whiteboard {
+        width: 92vw;
+        height: 92vw * 0.817;
+      }
+    }
+
+    @media @for-tablet-portrait-up {
+      padding: 0 9vw 4vw 9vw;
+
+      svg#whiteboard {
+        width: 82vw;
+        height: 50vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+/* Styles for the jobs page and detail
+***************************************************/
+.job__item {
+  box-sizing: border-box;
+  border-bottom: 1px solid @mediumgray;
+  position: relative;
+
+  @media @for-phone-only {
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+  }
+  @media @for-tablet-portrait-up {
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+  }
+
+  p {
+    width: 80%;
+    font-family: @regular-font, @generic-fonts;
+    color: @blue;
+
+    @media @for-phone-only {
+      font-size: 4.5vw;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 1.75vw;
+    }
+  }
+
+  path {
+    fill: @blue;
+  }
+
+  &:hover {
+    path {
+      fill: @red;
+    }
+
+    .job__title {
+      color: @red;
+    }
+  }
+}
+
+.job__arrow {
+  position: absolute;
+
+  @media @for-phone-only {
+    height: 4.75vw;
+    top: 5vw;
+    right: 0;
+  }
+  @media @for-tablet-portrait-up {
+    height: 2.5vw;
+    top: 3vw;
+    right: 0;
+  }
+  @media @for-tablet-landscape-up {
+    height: 2.5vw;
+    top: 3vw;
+    right: 0;
+  }
+}
+
+.job__title {
+  font-family: @medium-font, @generic-fonts;
+  color: @blue;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1vw;
+
+  @media @for-phone-only {font-size: 4.75vw;}
+  @media @for-tablet-portrait-up {font-size: 2.5vw;}
+}
+
+.job__none {
+  font-family: @medium-font, @generic-fonts;
+  color: @blue;
+
+  @media @for-phone-only {font-size: 4.75vw;}
+  @media @for-tablet-portrait-up {font-size: 2.5vw;}
+}
+
+.job__detail {
+  font-family: @regular-font, @generic-fonts;
+  color: @blue;
+  font-size: 18px;
+  line-height: 24px;
+
+  h1 {
+    font-family: @medium-font, @generic-fonts;
+    color: @blue;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 2vw;
+
+    @media @for-phone-only {font-size: 4.75vw;}
+    @media @for-tablet-portrait-up {font-size: 2.5vw;}
+  }
+
+  h2 {
+    font-family: @medium-font, @generic-fonts;
+    color: @blue;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    @media @for-phone-only {
+      font-size: 3.75vw;
+      margin-top: 8vw;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 1.75vw;
+      margin-top: 3vw;
+    }
+  }
+
+  a {
+    color: @blue;
+    text-decoration: none;
+    font-family: @bold-font;
+    transition: all .4s ease;
+
+    &:visited, &:active {
+      color: @blue;
+    }
+
+    &:hover {
+      color: @red;
+    }
+  }
+}
+
+.job__back-arrow-link {
+  position: relative;
+
+  path {
+    fill: @slate;
+  }
+
+  &:hover {
+    color: @red;
+
+    path {
+      fill: @red;
+    }
+  }
+}
+
+.job__back-arrow {
+
+  @media @for-phone-only {
+    height: 6vw;
+    margin-bottom: 8vw;
+  }
+  @media @for-tablet-portrait-up {
+    height: 6vw;
+    margin-bottom: 8vw;
+  }
+  @media @for-tablet-landscape-up {
+    height: 2.5vw;
+    margin-bottom: 4vw;
+  }
+}
