@@ -1,3 +1,40 @@
+/* Flexible columns
+***************************************************/
+.grid__container {
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.grid__row {
+  display: flex;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+
+  @media @for-phone-only {flex-direction: column;}
+}
+
+.grid__col-fixed {
+  position: relative;
+
+  @media @for-phone-only {
+    flex: 0 0 auto;
+    height: 100vw;
+  }
+  @media @for-tablet-portrait-up {
+    flex: 1;
+    height: 50vw;
+  }
+}
+
+.grid__col-fluid {
+  position: relative;
+  @media @for-phone-only {flex: 0 0 auto;}
+  @media @for-tablet-portrait-up {flex: 1;}
+}
+
 /* Z-index variables
 ***************************************************/
 @z-menu: 5;

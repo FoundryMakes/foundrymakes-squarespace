@@ -6,7 +6,7 @@
 
 /* Overlay mods
 ***************************************************/
-.util__overlay {
+.util__overlay-blue {
   display: block;
   z-index: @z-overlay;
   height: 100%;
@@ -14,10 +14,6 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.util__overlay-blue {
-  &:extend(.util__overlay);
   background-color: rgba(0, 51, 78, 0.75);
 }
 
@@ -105,10 +101,10 @@
 }
 
 .hide__mobile {
-  @media @media @for-phone-only {display: none;}
+  @media @for-phone-only {display: none;}
 }
 
 .show__mobile {
   display: none;
-  @media @media @for-phone-only {display: initial;}
+  @media @for-phone-only {display: initial;}
 }
