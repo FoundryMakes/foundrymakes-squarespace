@@ -6,7 +6,9 @@
 
   <!-- include system scripts, page meta, and header code injection -->
   {squarespace-headers}
+
 </head>
+
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
   <div class="site-container">
@@ -17,12 +19,12 @@
       {@|apply navbar.block}
     </header>
 
-    <!-- cms content injection point -->
+    <!-- Hero video loop -->
     <main class="content-container" role="main" data-content-field="main-content">
-      <div>
+      <div style="height:50vw; overflow:hidden;" class="grid__row">
         <div class="util__z-above-overlay text__hero ">
-          <h1 class="text__headline">Welcome to Foundry</h1>
-          <h1 class="text__subheadline">{collection.description|safe}</h1>
+          <h1 class="util__text-red">Welcome to Foundry</h1>
+          <h2 class="util__text-white">{collection.description|safe}</p>
         </div>
         <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" class="util__grayscale">
           <source src="http://foundrymakes.com/uploads/video/t9VuOY7H6hPP0NuS.webm" type="video/webm"/>
@@ -30,6 +32,14 @@
         </video>
         <div class="util__overlay-blue"></div>
       </div>
+
+      <!-- Client logos carousel -->
+      <div style="height: 50vw" class="text__hero scroll-reveal">
+        <h1 class="text__headline">Partners</h1>
+        <p class="text__subheadline util__text-blue">We’re proud to work with businesses dedicated to becoming customer connected.</p>
+      </div>
+
+      <!-- cms content injection point -->
       <!-- {squarespace.main-content} -->
     </main>
 
