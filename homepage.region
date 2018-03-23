@@ -23,7 +23,7 @@
     <main class="content-container" role="main" data-content-field="main-content">
       <div style="height:50vw; overflow:hidden;" class="grid__row">
         <div class="util__z-above-overlay text__hero ">
-          <h1 class="util__text-red">Welcome to Foundry</h1>
+          <h1 class="util__text-red"><squarespace:block-field id="hero-header" columns="12" lock-layout="true"/></h1>
           <h2 class="util__text-white">{collection.description|safe}</p>
         </div>
         <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" class="util__grayscale">
@@ -36,7 +36,10 @@
       <!-- Client logos carousel -->
       <div style="height: 50vw" class="text__hero scroll-reveal">
         <h1 class="text__headline">Partners</h1>
-        <p class="text__subheadline util__text-blue">We’re proud to work with businesses dedicated to becoming customer connected.</p>
+        <!-- <p class="text__subheadline util__text-blue">We’re proud to work with businesses dedicated to becoming customer connected.</p> -->
+        <h2 class="util__text-blue">
+          <squarespace:block-field id="blockField1" columns="12" lock-layout="true"/>
+        </h2>
       </div>
 
       <!-- cms content injection point -->
