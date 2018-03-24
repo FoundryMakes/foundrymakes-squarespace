@@ -21,8 +21,8 @@
 
     <!-- Hero video loop -->
     <main class="content-container" role="main" data-content-field="main-content">
-      <div style="height:50vw; overflow:hidden;" class="grid__row">
-        <div class="util__z-above-overlay text__hero ">
+      <div style="height:50vw; overflow:hidden;" class="bg-video-container">
+        <div class="util__z-above-overlay text-container ">
           <h1 class="util__text-red">
             <squarespace:block-field id="hero-header" columns="12" lock-layout="true"/>
           </h1>
@@ -38,7 +38,7 @@
       </div>
 
       <!-- Client logos carousel -->
-      <div style="height: 50vw" class="text__hero scroll-reveal">
+      <div style="height: 50vw" class="text-container scroll-reveal">
         <h1 class="util__text-red">
           <squarespace:block-field id="partners-header" columns="12" lock-layout="true"/>
         </h1>

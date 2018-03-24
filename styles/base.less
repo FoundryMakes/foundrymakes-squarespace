@@ -5,3 +5,31 @@
   position: relative;
   overflow-x: hidden;
 }
+
+/* Background video container
+***************************************************/
+.bg-video-container {
+  padding: 0;
+  position: relative;
+  height: 50vw;
+  overflow: hidden;
+}
+
+/* Text container
+***************************************************/
+.text-container {
+  box-sizing: border-box;
+  z-index: @z-content;
+
+  @media @for-phone-only {padding: 9vh 4vh 3vh 4vh;}
+  @media @for-tablet-portrait-up {padding: 8vw 9vw 4vw 9vw;}
+}
+
+/* Z-index variables
+***************************************************/
+@z-menu: 5;
+@z-navbar: 4;
+@z-above-overlay: 3;
+@z-overlay: 2;
+@z-content: 1;
+@z-below-content: -1;
