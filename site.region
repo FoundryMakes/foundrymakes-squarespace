@@ -24,7 +24,7 @@
 
       <!--Footer -->
       <footer>
-
+        {@|apply footer.block}
       </footer>
 
     </div>

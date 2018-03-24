@@ -1,0 +1,7 @@
+{.repeated section items}
+  {.section collection}
+    <span class="footer__link-item">
+      <a class="footer__link util__text-uppercase" href="{fullUrl}">{navigationTitle}</a>
+    </span>
+  {.end}
+{.end}
