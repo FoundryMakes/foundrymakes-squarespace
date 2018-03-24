@@ -20,7 +20,9 @@
       <!-- cms content injection point -->
       <main class="content-container project-container" role="main" data-content-field="main-content">
         <squarespace:block-field id="project-hero" columns="12"/>
-        {squarespace.main-content}
+        <div class="project-content">
+          {squarespace.main-content}
+        </div>
       </main>
 
       <!--Footer -->
