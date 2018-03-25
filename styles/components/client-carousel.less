@@ -16,17 +16,6 @@
   @media @for-tablet-portrait-up {
     height: 15vw;
   }
-
-  .clients__logo {
-    @media @for-phone-only {
-      max-width: 50%;
-      max-height: 60%;
-    }
-    @media @for-tablet-portrait-up {
-      max-width: 60%;
-      max-height: 40%;
-    }
-  }
 }
 
 .clients__row {
@@ -49,23 +38,20 @@
 }
 
 .clients__logo-link {
-  @media @for-phone-only {
-    width: 50%;
-  }
-  @media @for-tablet-portrait-up {
-    width: 50%;
-  }
+  width: 50%;
 }
 
 .clients__logo {
   filter: grayscale(1);
   @media @for-phone-only {
-    width: 100%;
-    margin-top: 6vh;
+    max-width: 50%;
+    max-height: 60%;
+    margin-bottom: 6vh;
   }
   @media @for-tablet-portrait-up {
-    width: 100%;
-    margin-top: 6vw;
+    max-width: 60%;
+    max-height: 40%;
+    margin-bottom: 6vw;
   }
 }
 
@@ -85,7 +71,7 @@
   animation: fade-out-bck 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/* Fading animation
+/* Fade in animation
 ***************************************************/
 @-webkit-keyframes fade-in-fwd {
   0% {
@@ -108,9 +94,8 @@
   }
 }
 
-/* =============================================================================
-  FADE OUT ANIMATION
-============================================================================= */
+/* Fade out animation
+***************************************************/
 @-webkit-keyframes fade-out-bck {
   0% {
     transform: translateZ(0);

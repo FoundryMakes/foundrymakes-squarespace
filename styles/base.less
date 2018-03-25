@@ -11,8 +11,30 @@
 .bg-video-container {
   padding: 0;
   position: relative;
-  height: 50vw;
   overflow: hidden;
+
+  @media @for-phone-only {height: 100vw}
+  @media @for-tablet-portrait-up {height: 50vw}
+
+  video {
+    padding: 0;
+    position: absolute;
+    margin: auto;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    z-index: @z-content;
+
+    @media @for-phone-only {
+      width: auto;
+      height: 100%;
+    }
+    @media @for-tablet-portrait-up {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 /* Text container

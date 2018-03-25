@@ -1,11 +1,3 @@
-
-/**
- * This script wrapped in a Immediately-Invoked Function Expression (IIFE) to
- * prevent variables from leaking onto the global scope. For more information
- * on IIFE visit the link below.
- * @see http://en.wikipedia.org/wiki/Immediately-invoked_function_expression
- */
-
 (function() {
   'use strict';
 
@@ -23,39 +15,39 @@
   // The event subscription that reloads images on resize
   window.addEventListener('resize', loadAllImages);
 
-}());
+  // Hide/show header
+  var header = document.getElementsByClassName('navbar')[0];
+  var headroom = new Headroom(header, { "tolerance": 10 });
+  headroom.init();
 
-// Hide/show header
-var header = document.getElementsByClassName('navbar')[0];
-var headroom = new Headroom(header, { "tolerance": 10 });
-headroom.init();
+}());
 
 // Open Menu
 function openMenu() {
-    document.getElementsByClassName('navbar__menu-hamburger')[0].style.opacity = '0';
-    document.getElementsByClassName('menu')[0].style.height = '100%';
+  document.getElementsByClassName('navbar__menu-hamburger')[0].style.opacity = '0';
+  document.getElementsByClassName('menu')[0].style.height = '100%';
 }
 
 // Close Menu
 function closeMenu() {
-    document.getElementsByClassName('menu')[0].style.height = '0';
-    setTimeout(function () {
-        document.getElementsByClassName('navbar__menu-hamburger')[0].style.opacity = '1';
-    }, 255);
+  document.getElementsByClassName('menu')[0].style.height = '0';
+  setTimeout(function () {
+    document.getElementsByClassName('navbar__menu-hamburger')[0].style.opacity = '1';
+  }, 255);
 }
 
 // Contact form
 function sayHello(e) {
   e.preventDefault();
   var form = document.getElementById('hello');
-    if (form.checkValidity()) {
-      var formData = new FormData(form);
-      var request = new XMLHttpRequest();
-      request.open('POST', '/hello');
-      request.send(formData);
-      document.getElementsByClassName('submitted')[0].style.opacity = '1';
-      form.getElementsByTagName('button')[0].style.display = 'none';
-    }
+  if (form.checkValidity()) {
+    var formData = new FormData(form);
+    var request = new XMLHttpRequest();
+    request.open('POST', '/hello');
+    request.send(formData);
+    document.getElementsByClassName('submitted')[0].style.opacity = '1';
+    form.getElementsByTagName('button')[0].style.display = 'none';
+  }
 }
 
 // Schedule Workshop form
