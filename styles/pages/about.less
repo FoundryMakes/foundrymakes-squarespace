@@ -1,3 +1,60 @@
+/* Team photos on about page
+***************************************************/
+.team-photos {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3vw 0;
+  padding-right: 0;
+  padding-left: 0;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media @for-phone-only {
+    height: 200vw;
+  }
+  @media @for-tablet-portrait-up {
+    height: 50vw;
+  }
+
+  .tile {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    @media @for-phone-only {
+      flex: 0 0 50%;
+      width: 50vw;
+      height: 50vw;
+    }
+    @media @for-tablet-portrait-up {
+      flex: 0 0 25%;
+      width: 25vw;
+      height: 25vw;
+    }
+
+    & > img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      display: block;
+
+      &[data-src] {
+        display: none;
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  .hidden-images {
+    display: none;
+  }
+}
+
 /* Leadership photos on the about page
 ***************************************************/
 .leadership-photos {

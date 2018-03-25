@@ -1,3 +1,65 @@
+/* Layout styles for project pages
+***************************************************/
+.project-content {
+    .image-block {
+      margin: 0;
+    }
+
+    .image-block:nth-child(n+2) {
+      @media @for-phone-only {
+        margin-left: 6vw;
+        margin-right: 6vw;
+      }
+      @media @for-tablet-portrait-up {
+        margin-left: 6vw;
+        margin-right: 6vw;
+      }
+      @media @for-tablet-landscape-up {
+        margin-left: 4vw;
+        margin-right: 4vw;
+      }
+    }
+
+    .html-block {
+      width: 70vw;
+      margin: auto;
+      margin-top: 6vmax;
+      margin-bottom: 6vmax;
+
+      h3 {
+        color: @red;
+        margin-bottom: 2vw;
+      }
+    }
+}
+
+/* Overrides for carousels in project pages
+***************************************************/
+.swiper-container {
+  width: 100vw;
+  height: inherit;
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    width: auto;
+
+    img {
+      height: 80%;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: #E3E3E3;
+    opacity: .7;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #999999;
+    opacity: .7;
+  }
+}
+
 /* Style for pagination element used on case studies
 ***************************************************/
 .pagination {
