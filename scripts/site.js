@@ -109,3 +109,30 @@ function scheduleWorkshop(e) {
   }
 }
 
+// Mailchimp form subscription
+var errorMessage = $('#subscribe .error');
+errorMessage.css('visibility', 'hidden');
+$('#subscribe').submit(function(e) {
+  e.preventDefault();
+  errorMessage.css('visibility', 'hidden');
+  var email = $('#subscribe input[name=email]').val();
+  $.ajax({
+    method: 'POST',
+    url: '/subscribe',
+    dataType: 'text',
+    data: { email: email },
+    language: 'en',
+    error: function(resp, text) {
+      var message = "Oops! Something went wrong.";
+      if (resp.status >= 400) {
+        message = "Please enter a valid email address.";
+      }
+      errorMessage.html(message);
+      errorMessage.css('visibility', 'visible');
+    },
+    success: function(resp, text) {
+      errorMessage.html("Thanks for subscribing!");
+      errorMessage.css('visibility', 'visible');
+    }
+  });
+});
