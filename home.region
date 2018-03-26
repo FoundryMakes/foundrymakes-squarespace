@@ -109,8 +109,9 @@
         </h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="cta__arrow">
           <title>Right Arrow</title>
-          <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path><a href="/contact" class="util__background-link"></a>
+          <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
         </svg>
+        <a href="/contact" class="util__background-link"></a>
       </div>
     </div>
 
