@@ -22,13 +22,13 @@
     <main class="content-container" role="main" data-content-field="main-content">
 
       <!-- Hero video loop -->
-      <div class="bg-video-container">
+      <div class="hero__video">
         <div class="util__z-above-overlay text-container ">
           <h1 class="util__text-red">
-            <squarespace:block-field id="hero-header" columns="12" lock-layout="true"/>
+            <squarespace:block-field id="home__hero-header" columns="12" lock-layout="true"/>
           </h1>
           <h2 class="util__text-white">
-            <squarespace:block-field id="hero-description" columns="12" lock-layout="true"/>
+            <squarespace:block-field id="home__hero-description" columns="12" lock-layout="true"/>
           </h2>
         </div>
         <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" class="util__grayscale">
@@ -41,10 +41,10 @@
       <!-- Client section -->
       <div class="text-container scroll-reveal">
         <h1 class="util__text-red">
-          <squarespace:block-field id="partners-header" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="home__partners-header" columns="12" lock-layout="true"/>
         </h1>
         <h2 class="util__text-blue">
-          <squarespace:block-field id="partners-description" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="home__partners-description" columns="12" lock-layout="true"/>
         </h2>
       </div>
 
@@ -101,10 +101,10 @@
     <!-- CTA -->
     <div class="cta scroll-reveal">
       <h1 class="util__text-red">
-        <squarespace:block-field id="cta-header" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="home__cta-header" columns="12" lock-layout="true"/>
       </h1>
       <h2 class="util__text-blue">
-        <squarespace:block-field id="cta-description" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="home__cta-description" columns="12" lock-layout="true"/>
       </h2>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="cta__arrow">
         <title>Right Arrow</title>

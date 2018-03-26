@@ -22,19 +22,19 @@
     <main class="content-container" role="main" data-content-field="main-content">
 
       <!-- Hero video loop -->
-      <div class="bg-video-container">
+      <div class="hero__image">
         <div class="util__z-above-overlay text-container ">
+          <p class="page-title">
+            <squarespace:block-field id="about__hero-title" columns="12" lock-layout="true"/>
+          </p>
           <h1 class="util__text-red">
-            <squarespace:block-field id="hero-header" columns="12" lock-layout="true"/>
+            <squarespace:block-field id="about__hero-header" columns="12" lock-layout="true"/>
           </h1>
           <h2 class="util__text-white">
-            <squarespace:block-field id="hero-description" columns="12" lock-layout="true"/>
+            <squarespace:block-field id="about__hero-description" columns="12" lock-layout="true"/>
           </h2>
         </div>
-        <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" class="util__grayscale">
-          <source src="http://foundrymakes.com/uploads/video/t9VuOY7H6hPP0NuS.webm" type="video/webm"/>
-          <source src="http://foundrymakes.com/uploads/video/slyWoUpcU-KVpyGo.mp4" type="video/mp4"/>
-        </video>
+        <img src="/assets/images/hero__about.jpg">
         <div class="util__overlay-blue"></div>
       </div>
 
