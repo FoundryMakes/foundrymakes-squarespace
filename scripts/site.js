@@ -20,6 +20,20 @@
   var headroom = new Headroom(header, { "tolerance": 10 });
   headroom.init();
 
+  // Scroll reveal
+  window.sr = ScrollReveal();
+  var srConfig = {
+    scale: 1,
+    origin: 'bottom',
+    distance: '10px',
+    reset: false,
+    duration: 800,
+    delay: 0
+  }
+
+  sr.reveal('.scroll-reveal', srConfig);
+  sr.reveal('.sqs-block', srConfig);
+
 }());
 
 // Open Menu
