@@ -12,15 +12,13 @@
       projectTiles.forEach(function(item, index){
         var link = '<a href="' + data.items[index].clickthroughUrl + '" class="util__background-link"></a>'
         var image = '<div class="projects__tile-image-container"><img src="'+ data.items[index].assetUrl +'" alt="'+ data.items[index].title +'" class="projects__tile-image"/></div>'
-        var overlay = '<div class="projects__tile-overlay"><div class="projects__tile-overlay-inner"><h2>'+ data.items[index].title +'</h2><h3>'+ data.items[index].body +'</h3></div></div>'
+        var overlay = '<div class="projects__tile-overlay"><div class="projects__tile-overlay-inner"><p class="projects__tile-overlay-client">'+ data.items[index].title +'</p><div class="projects__tile-overlay-title">'+ data.items[index].body +'</div></div></div>'
 
         projectTiles[index].innerHTML = link + image + overlay;
         projectTiles[index].style.backgroundColor = data.items[index].tags[0]
-        console.log(overlay)
       })
     } else {
       // We reached our target server, but it returned an error
-
     }
   };
 
