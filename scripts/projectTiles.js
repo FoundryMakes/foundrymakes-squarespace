@@ -2,7 +2,7 @@
   'use strict';
 
   var request = new XMLHttpRequest();
-  request.open('GET', '/projects?format=json', true);
+  request.open('GET', '/project-tiles?format=json', true);
 
   var projectTiles = document.querySelectorAll('.projects__tile-home');
 
