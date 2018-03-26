@@ -48,16 +48,8 @@
         </div>
       </div>
 
-      <!-- Selected case studies -->
+      <!-- Team photos -->
       <div class="team-photos scroll-reveal">
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
         <div class="hidden-images"></div>
       </div>
     </main>
@@ -74,7 +66,6 @@
         <title>Right Arrow</title>
         <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
       </svg>
-      <a href="/contact" class="util__background-link"></a>
     </div>
 
     <!--Footer -->
@@ -87,6 +78,7 @@
   <!-- combo and minify scripts when not logged in -->
   <squarespace:script src="lib/headroom.min.js" combo="true" />
   <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
+  <squarespace:script src="lib/underscore.min.js" combo="true" />
   <squarespace:script src="teamPhotos.js" combo="true" />
   <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
