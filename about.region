@@ -48,43 +48,6 @@
         </h2>
       </div>
 
-      <!-- Client logos carousel -->
-      <div class="clients scroll-reveal">
-        <div class="clients__row">
-          <div class="clients__tile">
-            <img class="clients__logo" src="/assets/clients/logo__cl.jpeg">
-          </div>
-          <div class="clients__tile">
-            <img class="clients__logo" src="/assets/clients/logo__parade-of-homes-text.svg">
-          </div>
-          <div class="clients__tile">
-            <img class="clients__logo" src="/assets/clients/logo__coco.svg">
-          </div>
-        </div>
-        <div class="clients__row clients__row-inactive">
-          <div class="clients__tile">
-            <img class="clients__logo" src="/assets/clients/logo__conservis-h.svg">
-          </div>
-          <div class="clients__tile">
-            <img class="clients__logo" src="/assets/clients/logo__baird.svg">
-          </div>
-          <div class="clients__tile">
-            <img class="clients__logo" src="/assets/clients/logo__welsh.svg">
-          </div>
-        </div>
-        <div class="clients__row clients__row-inactive">
-          <div class="clients__tile">
-            <img class="clients__logo" src="/assets/clients/logo__mindset-h.svg">
-          </div>
-          <div class="clients__tile">
-            <img class="clients__logo" src="/assets/clients/logo__petopio.svg">
-          </div>
-          <div class="clients__tile">
-            <img class="clients__logo" src="/assets/clients/logo__400-doors.svg">
-          </div>
-        </div>
-      </div>
-
       <!-- Selected case studies -->
       <div class="projects scroll-reveal">
         <div class="projects__tile-home"></div>
@@ -123,8 +86,6 @@
   <!-- combo and minify scripts when not logged in -->
   <squarespace:script src="lib/headroom.min.js" combo="true" />
   <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
-  <squarespace:script src="clientsCarousel.js" combo="true" />
-  <squarespace:script src="projectTiles.js" combo="true" />
   <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
   <!-- other scripts, and footer code injection -->
