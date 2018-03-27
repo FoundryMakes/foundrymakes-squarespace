@@ -77,7 +77,8 @@
   flex-direction: column;
   width: 100%;
 
-  .footer__error {
+  .field-error,
+  .footer__errors {
     text-align: center;
     color: @red;
   }
@@ -89,7 +90,7 @@
     justify-content: center;
   }
 
-  input {
+  input[type="text"] {
     flex: 1 0 auto;
     font-family: @light-font, @generic-fonts;
     color: @white;
