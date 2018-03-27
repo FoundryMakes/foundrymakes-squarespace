@@ -1,33 +1,19 @@
 /* Styles for the contact page
 ***************************************************/
-.contact-info {
-  .grid__col-fixed {
-    flex: none;
-  }
+.rule {
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: .3em 0;
+  padding: 0;
+}
 
-  .text__headline,
-  .text__subheadline {
-    @media @for-phone-only {
-      font-size: 6vw;
-    }
-  }
+.rule__white:extend(.rule) {
+  border-top: 1px solid @white;
+}
 
-  .text__link {
-    white-space: nowrap;
-  }
-
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid @white;
-    margin: .3em 0;
-    padding: 0;
-
-    &.blue {
-      border-top: 1px solid @blue;
-    }
-  }
+.rule__blue:extend(.rule) {
+  border-top: 1px solid @blue;
 }
 
 #map {
