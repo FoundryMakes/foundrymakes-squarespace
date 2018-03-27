@@ -43,9 +43,26 @@ h3 {
 }
 
 p {
-  line-height: 1.4em;
+  line-height: 1.15;
   @media @for-phone-only {font-size: 4.25vw;}
   @media @for-tablet-portrait-up {font-size: 2vw;}
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all .4s ease;
+
+  &.hover {
+    &:active,
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover {
+      color: @red;
+    }
+  }
 }
 
 /* Custom typography
@@ -72,5 +89,15 @@ p {
 .page__subheadline {
   h2 {
     margin: 0;
+  }
+
+  p, ul {
+    margin: 0;
+    @media @for-phone-only {font-size: 6.75vw;}
+    @media @for-tablet-portrait-up {font-size: 4vw;}
+  }
+
+  ul {
+    margin-top: 3vw;
   }
 }

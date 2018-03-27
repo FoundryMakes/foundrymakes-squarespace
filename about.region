@@ -40,10 +40,10 @@
 
       <!-- Team section -->
       <div class="text-container scroll-reveal">
-        <div class="util__text-red">
+        <div class="page__headline util__text-red">
           <squarespace:block-field id="about__team-header" columns="12" lock-layout="true"/>
         </div>
-        <div class="util__text-blue">
+        <div class="page__subheadline util__text-blue">
           <squarespace:block-field id="about__team-description" columns="12" lock-layout="true"/>
         </div>
       </div>
@@ -55,17 +55,17 @@
 
       <!-- Services section -->
       <div class="text-container scroll-reveal">
-        <div class="util__text-red">
+        <div class="page__headline util__text-red">
           <squarespace:block-field id="about__services-header" columns="12" lock-layout="true"/>
         </div>
-        <div class="util__text-blue">
+        <div class="page__subheadline util__text-blue">
           <squarespace:block-field id="about__services-description" columns="12" lock-layout="true"/>
         </div>
       </div>
 
       <!-- Leadership section -->
       <div class="text-container scroll-reveal">
-        <div class="util__text-red">
+        <div class="page__headline util__text-red">
           <squarespace:block-field id="about__leadership-header" columns="12" lock-layout="true" />
         </div>
         <div class="leadership-photos">
@@ -89,10 +89,10 @@
 
       <!-- CTA -->
       <div class="cta scroll-reveal">
-        <div class="util__text-red">
+        <div class="page__headline util__text-red">
           <squarespace:block-field id="cta-header" columns="12" lock-layout="true"/>
         </div>
-        <div class="util__text-blue">
+        <div class="page__subheadline util__text-blue">
           <squarespace:block-field id="cta-description" columns="12" lock-layout="true"/>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="cta__arrow">
