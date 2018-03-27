@@ -21,19 +21,19 @@
     <div>T &nbsp;<a href="tel:61222342026" title="Call Foundry" class="footer__link">612 234 2026</a></div>
   </div>
   
-  {#  Mailchimp Form  }
-  <div class="footer__subscribe sqs-block newsletter-block sqs-block-newsletter rendered" data-block-type="51" id="block-yui_3_17_2_1_1522164164058_3554">
+  {#  Mailchimp form, aka div city, aka totally insane  }
+  <div class="footer__subscribe newsletter-block sqs-block-newsletter rendered" data-block-type="51" id="block-yui_3_17_2_1_1522178008708_3688">
     <div class="sqs-block-content">
     
       <div class="newsletter-form-wrapper newsletter-form-wrapper--layoutFloat newsletter-form-wrapper--alignCenter">
         
-        <form class="newsletter-form" data-form-id="5aba61d50e2e723b8ec96085" autocomplete="on" method="POST" onsubmit="return (function(form) { Y.use ('squarespace-form-submit', 'node', function (Y) { (new Y.Squarespace.FormSubmit({ formNode: Y.Node(form) })).submit('5aba61d50e2e723b8ec96085', '5ab2b02870a6adbbeb009b8e', 'page-5ab2b02870a6adbbeb009b8e') }); return false;})(this)">
+        <form class="newsletter-form" data-form-id="5aba97e703ce64787f61bbae" autocomplete="on" method="POST" onsubmit="return (function(form) { Y.use ('squarespace-form-submit', 'node', function (Y) { (new Y.Squarespace.FormSubmit({ formNode: Y.Node(form) })).submit('5aba97e703ce64787f61bbae', '5aba97d870a6adc72870449b', 'page-5aba97d870a6adc72870449b') }); return false;})(this)">
         
           <div class="newsletter-form-body">
             <div class="newsletter-form-fields-wrapper form-fields">
-              <div id="email-yui_3_17_2_1_1522164164058_3559" class="newsletter-form-field-wrapper form-item field email required">
-                <label class="newsletter-form-field-label title" for="email-yui_3_17_2_1_1522164164058_3559-field">Email Address</label>
-                <input id="email-yui_3_17_2_1_1522164164058_3559-field" class="newsletter-form-field-element field-element" name="email" x-autocompletetype="email" spellcheck="false" placeholder="Enter your email for Foundry updates" type="text">
+              <div id="email-yui_3_17_2_1_1522178008708_3693" class="newsletter-form-field-wrapper form-item field email required">
+                <label class="newsletter-form-field-label title" for="email-yui_3_17_2_1_1522178008708_3693-field">Email Address</label>
+                <input id="email-yui_3_17_2_1_1522178008708_3693-field" class="newsletter-form-field-element field-element" name="email" x-autocompletetype="email" spellcheck="false" placeholder="Enter your email for Foundry updates" type="text">
               </div>
             </div>
 

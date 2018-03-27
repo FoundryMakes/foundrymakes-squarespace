@@ -71,65 +71,101 @@
 }
 
 /* Styles for the Mailchimp form
+/* (sorry they're insane.)
 ***************************************************/
 .footer__subscribe {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 0 !important;
 
-  .field-error,
-  .footer__errors {
-    text-align: center;
-    color: @red;
-  }
-
-  .footer__inputs {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  input[type="text"] {
-    flex: 1 0 auto;
-    font-family: @light-font, @generic-fonts;
-    color: @white;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background: none;
-    border-width: 0;
-    border-color: transparent;
-    border: 1px solid @white;
+  // Input box for the subscribe form
+  .newsletter-form-field-element {
     display: block;
-    width: 350px;
-    height: 40px;
     box-sizing: border-box;
-
-    &:focus {
-      color: @blue;
-    }
-
-    &::after,
-    &::before {
-      box-sizing: border-box;
-    }
-
-    &::-webkit-autofill {
-      -webkit-box-shadow: 0 0 0 0 white inset;
-      box-shadow: 0 0 0 0 white inset;
-    }
-
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-
+    padding: 10px;
+    
+    // Set the input color to white and remove weird font smoothing
+    color: @white;
+    font-family: @light-font, @generic-fonts;
+    font-size: 16px !important;
+    -moz-osx-font-smoothing: auto !important;
     &::-webkit-input-placeholder { color: @white; }
     &::-moz-placeholder { color: @white; }
     &:-ms-input-placeholder { color: @white; }
     &:-moz-placeholder { color: @white; }
+    
+    // Set the appearance and dimensions of the input box
+    width: 350px;
+    height: 40px;
+    background: none;
+    border: 1px solid @white;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+
+    // Change the color of the text on focus
+    &:focus {
+      color: @blue;
+    }
+
+    // Override weird highlights and focus states
+    -webkit-appearance: none;
+    
+    &::after,
+    &::before {
+      box-sizing: border-box;
+    }
+    
+    &::-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 0 white inset;
+      box-shadow: 0 0 0 0 white inset;
+    }
   }
 
+  // Sign Up button for the subscription form
+  .newsletter-form-button {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+    font-family: @regular-font, @generic-fonts;
+    font-size: 16px !important;
+    color: @white;
+    text-transform: capitalize;
+    -moz-osx-font-smoothing: auto !important;
+    
+    height: 40px !important;
+    margin-left: 15px;
+    padding: 7px 30px 7px 30px !important;
+    background: transparent;
+    border: 1px solid @white !important;
+    border-radius: 50px !important;
+
+    // Override Squarespace hover transition
+    &:hover {
+      background: @white;
+      color: @blue;
+      opacity: 1 !important;
+      transition: all .4s ease !important;
+    }
+  }
+
+  .field-error {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 16px !important;
+    color: @red;
+    -moz-osx-font-smoothing: auto !important;
+  }
+  
+  .form-submission-text {
+    color: @white;
+    font-size: 16px !important;
+    -moz-osx-font-smoothing: auto !important;
+  }
+  
+  // Override style on the countless Squarespace containers
   .newsletter-style-dark,
   .newsletter-block,
   .newsletter-form-wrapper {
@@ -138,45 +174,20 @@
     background: none;
     padding: 0;
     margin: 0;
-    -moz-osx-font-smoothing: none;
-    
-    p {
-      color: @red;
-    }
   }
 
-  .newsletter-form-button {
-    flex: none;
-    font-family: @regular-font, @generic-fonts;
-    font-size: 16px;
-    text-transform: capitalize;
-    position: relative;
-    background: transparent;
-    cursor: pointer;
-    overflow: hidden;
-    padding: 7px 30px 7px 30px !important;
-    border-radius: 50px !important;
-    height: 40px !important;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    border: 1px solid @white !important;
-    color: @white;
-
-    &:hover {
-      background: @white;
-      color: @blue;
-      transition: all .4s ease;
-    }
-  }
-
-  .newsletter-block, 
+  // Override all the crazy padding and margins Squarespace throws on everything
+  .newsletter-block,
+  .newsletter-form-wrapper,
+  .newsletter-form-wrapper--layoutFloat,
+  .newsletter-form-wrapper--alignCenter,
   .newsletter-form-button-wrapper,
   .newsletter-form-field-wrapper,
   .newsletter-form-fields-wrapper {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding-bottom: 0 !important;
   }
+
 }
 
 /* Social media icons
