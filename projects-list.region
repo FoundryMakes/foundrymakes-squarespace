@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  {#  Include system scripts, page meta, and header code injection  }
+  {squarespace-headers}
+
+</head>
+
+<body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+
+  <div class="site-container">
+
+    {#  Navbar  }
+    <header>
+      {@|apply menu.block}
+      {@|apply navbar.block}
+    </header>
+
+    <main role="main" data-content-field="main-content">
+
+      {#  Hero image  }
+      <div class="hero__image">
+        <div class="util__z-above-overlay text-container ">
+          <div class="page__title">
+            <squarespace:block-field id="projects__hero-title" columns="12" lock-layout="true"/>
+          </div>
+          <div class="page__headline util__text-red">
+            <squarespace:block-field id="projects__hero-header" columns="12" lock-layout="true"/>
+          </div>
+          <div class="page__subheadline util__text-white">
+            <squarespace:block-field id="projects__hero-description" columns="12" lock-layout="true"/>
+          </div>
+        </div>
+        <img src="/assets/images/hero__work.jpg">
+      </div>
+
+      {.section collection}
+
+  <div class="index-list clearfix" data-controller="IndexController" data-collection-id="{collection.id}">
+
+  {.repeated section collections}
+
+    <div id="index-section-{urlId}" class="index-section index-page-transition-link">
+      <article class="index-item{.background-source-video?} has-item-video{.or}{.section mainImage} has-item-image{.end}{.end}" data-item-id="{id}" data-url-id="{urlId}"{.background-source-video?}{.or}{.section mainImage}{.if colorData} style="background-color: #{colorData.suggestedBgColor}"{.end}{.end}{.end}>
+        <a class="index-item-link intrinsic" href="{fullUrl}">
+          {.background-source-video?}
+            <figure data-controller="VideoBackground" class="index-item-image-wrapper js-index-item-image-wrapper">
+              {@|apply sqs-video-background.block}
+            </figure>
+          {.or}
+            {.section mainImage}<figure class="index-item-image-wrapper js-index-item-image-wrapper"><img class="index-item-image js-index-item-image loading" {@|image-meta} data-load="false" /></figure>{.end}
+          {.end}
+        </a>
+        <div class="index-item-text-wrapper<squarespace:category collection="{urlId}">{.if categories} has-categories{.end}</squarespace:category>">
+          <h2 class="index-item-title">
+            <a class="index-item-title-link" href="{fullUrl}"><span class="index-item-title-text">{navigationTitle}</span></a>
+          </h2>
+
+          {.equal? typeName "project"}
+            <squarespace:category collection="{urlId}" template="category-slugs" />
+          {.or}
+          {.equal? typeName "gallery"}
+            <squarespace:category collection="{urlId}" template="category-slugs" />
+          {.end}
+          {.end}
+
+        </div>
+      </article>
+    </div>
+
+  {.end}
+
+  </div>
+
+{.end}
+
+      {#  Footer  }
+      <footer>
+        {@|apply footer.block}
+      </footer>
+
+  </div>
+
+  {#  Combo and minify scripts when not logged in  }
+  <squarespace:script src="lib/headroom.min.js" combo="true" />
+  <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
+  <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+
+  {#  Other Squarespace scripts, and footer code injection  }
+  {squarespace-footers}
+
+</body>
+</html>
