@@ -125,7 +125,7 @@
   <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
   <squarespace:script src="clientsCarousel.js" combo="true" />
   <squarespace:script src="projectTiles.js" combo="true" />
-  <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+  <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
   <!-- other scripts, and footer code injection -->
   {squarespace-footers}
