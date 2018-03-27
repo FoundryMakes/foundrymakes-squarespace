@@ -1,7 +1,9 @@
 (function() {
   'use strict';
 
-  // Load all images via Squarespace's Responsive ImageLoader
+  /**
+   * Squarespace Responsive ImageLoader
+   */
   function loadAllImages() {
     var images = document.querySelectorAll('img[data-src]' );
     for (var i = 0; i < images.length; i++) {
@@ -9,18 +11,21 @@
     }
   }
 
-  // The event subscription that loads images when the page is ready
   document.addEventListener('DOMContentLoaded', loadAllImages);
-
-  // The event subscription that reloads images on resize
   window.addEventListener('resize', loadAllImages);
 
-  // Hide/show header
+  
+  /**
+   * Initiate Headroom to hide and show header on scroll
+   */
   var header = document.getElementsByClassName('navbar')[0];
   var headroom = new Headroom(header, { "tolerance": 10 });
   headroom.init();
 
-  // Scroll reveal
+  
+  /**
+   * Configure ScrollReveal and target classes
+   */
   window.sr = ScrollReveal();
   var srConfig = {
     scale: 1,
@@ -36,13 +41,16 @@
 
 }());
 
-// Open Menu
+
+/**
+ * Functions to control opening and closing the overlay menu
+ */
+
 function openMenu() {
   document.getElementsByClassName('navbar__menu-hamburger')[0].style.opacity = '0';
   document.getElementsByClassName('menu')[0].style.height = '100%';
 }
 
-// Close Menu
 function closeMenu() {
   document.getElementsByClassName('menu')[0].style.height = '0';
   setTimeout(function () {
