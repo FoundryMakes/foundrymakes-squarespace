@@ -16,8 +16,8 @@
   </div>
   <div class="footer__subscribe">
     <form id="subscribe">
-      <div class="error">&nbsp;</div>
-      <div class="inputs">
+      <div class="footer__error">&nbsp;</div>
+      <div class="footer__inputs">
         <input type="email" name="email" placeholder="Enter email for Foundry updates" required="required"/>
         <button type="submit">Subscribe</button>
       </div>

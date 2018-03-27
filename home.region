@@ -121,7 +121,6 @@
   </div>
 
   <!-- combo and minify scripts when not logged in -->
-  <squarespace:script src="lib/jquery.min.js" combo="true" />
   <squarespace:script src="lib/headroom.min.js" combo="true" />
   <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
   <squarespace:script src="clientsCarousel.js" combo="true" />
