@@ -22,15 +22,35 @@
   </div>
   
   {#  Mailchimp Form  }
-  <div class="footer__subscribe">
-    <form data-form-id="5aba61d50e2e723b8ec96085" autocomplete="on" method="POST" onsubmit="return (function(form) { Y.use ('squarespace-form-submit', 'node', function (Y) { (new Y.Squarespace.FormSubmit({ formNode: Y.Node(form) })).submit('5aba61d50e2e723b8ec96085', '5ab2b02870a6adbbeb009b8e', 'page-5ab2b02870a6adbbeb009b8e') }); return false;})(this)" _lpchecked="1" id="yui_3_17_2_1_1522164280776_89">
-      <div class="footer_errors">&nbsp;</div>
-      <div class="footer__inputs">
-        <label class="util__hidden" for="email-yui_3_17_2_1_1522164164058_3559-field">Email Address</label>
-        <input id="email-yui_3_17_2_1_1522164164058_3559-field" name="email" x-autocompletetype="email" spellcheck="false" placeholder="Sign up for the Foundry newsletter" type="text">
-        <button type="submit" value="Sign Up">Sign Up</button>
+  <div class="footer__subscribe sqs-block newsletter-block sqs-block-newsletter rendered" data-block-type="51" id="block-yui_3_17_2_1_1522164164058_3554">
+    <div class="sqs-block-content">
+    
+      <div class="newsletter-form-wrapper newsletter-form-wrapper--layoutFloat newsletter-form-wrapper--alignCenter">
+        
+        <form class="newsletter-form" data-form-id="5aba61d50e2e723b8ec96085" autocomplete="on" method="POST" onsubmit="return (function(form) { Y.use ('squarespace-form-submit', 'node', function (Y) { (new Y.Squarespace.FormSubmit({ formNode: Y.Node(form) })).submit('5aba61d50e2e723b8ec96085', '5ab2b02870a6adbbeb009b8e', 'page-5ab2b02870a6adbbeb009b8e') }); return false;})(this)">
+        
+          <div class="newsletter-form-body">
+            <div class="newsletter-form-fields-wrapper form-fields">
+              <div id="email-yui_3_17_2_1_1522164164058_3559" class="newsletter-form-field-wrapper form-item field email required">
+                <label class="newsletter-form-field-label title" for="email-yui_3_17_2_1_1522164164058_3559-field">Email Address</label>
+                <input id="email-yui_3_17_2_1_1522164164058_3559-field" class="newsletter-form-field-element field-element" name="email" x-autocompletetype="email" spellcheck="false" placeholder="Enter your email for Foundry updates" type="text">
+              </div>
+            </div>
+
+            <div class="newsletter-form-button-wrapper submit-wrapper">
+              <button class="newsletter-form-button sqs-system-button sqs-editable-button-layout sqs-editable-button-style sqs-editable-button-shape" type="submit" value="Sign Up">
+              <span class="newsletter-form-spinner sqs-spin light large"></span>
+              <span class="newsletter-form-button-label">Sign Up</span>
+              <span class="newsletter-form-button-icon"></span></button>
+            </div>
+          </div>
+
+          <div class="hidden form-submission-text">Thank you!</div>
+          <div class="hidden form-submission-html" data-submission-html=""></div>
+
+        </form>
       </div>
-    </form>
+    </div>
   </div>
 
   {#  Social icons  }

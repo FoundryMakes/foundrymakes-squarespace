@@ -102,17 +102,20 @@
     border-color: transparent;
     border: 1px solid @white;
     display: block;
-    max-width: 350px;
-    width: 100%;
+    width: 350px;
     height: 40px;
     box-sizing: border-box;
+
+    &:focus {
+      color: @blue;
+    }
 
     &::after,
     &::before {
       box-sizing: border-box;
     }
 
-    &:-webkit-autofill {
+    &::-webkit-autofill {
       -webkit-box-shadow: 0 0 0 0 white inset;
       box-shadow: 0 0 0 0 white inset;
     }
@@ -120,22 +123,44 @@
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     border-radius: 0;
+
+    &::-webkit-input-placeholder { color: @white; }
+    &::-moz-placeholder { color: @white; }
+    &:-ms-input-placeholder { color: @white; }
+    &:-moz-placeholder { color: @white; }
   }
 
-  button {
+  .newsletter-style-dark,
+  .newsletter-block,
+  .newsletter-form-wrapper {
+    display: flex;
+    justify-content: center;
+    background: none;
+    padding: 0;
+    margin: 0;
+    -moz-osx-font-smoothing: none;
+    
+    p {
+      color: @red;
+    }
+  }
+
+  .newsletter-form-button {
     flex: none;
     font-family: @regular-font, @generic-fonts;
+    font-size: 16px;
+    text-transform: capitalize;
     position: relative;
     background: transparent;
     cursor: pointer;
     overflow: hidden;
-    padding: 7px 30px 7px 30px;
-    border-radius: 50px;
-    height: 40px;
+    padding: 7px 30px 7px 30px !important;
+    border-radius: 50px !important;
+    height: 40px !important;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 15px;
-    border: 1px solid @white;
+    border: 1px solid @white !important;
     color: @white;
 
     &:hover {
@@ -143,6 +168,14 @@
       color: @blue;
       transition: all .4s ease;
     }
+  }
+
+  .newsletter-block, 
+  .newsletter-form-button-wrapper,
+  .newsletter-form-field-wrapper,
+  .newsletter-form-fields-wrapper {
+    margin: 0;
+    padding: 0;
   }
 }
 
