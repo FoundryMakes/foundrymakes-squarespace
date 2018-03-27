@@ -6,6 +6,23 @@
   overflow-x: hidden;
 }
 
+/* Default container margins
+***************************************************/
+.content-container {
+  @media @for-phone-only {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  @media @for-tablet-portrait-up {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  @media @for-tablet-landscape-up {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+}
+
 /* Hero video
 ***************************************************/
 .hero__video {

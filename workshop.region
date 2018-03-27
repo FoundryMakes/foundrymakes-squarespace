@@ -19,7 +19,7 @@
       {@|apply navbar.block}
     </header>
 
-    <main class="content-container" role="main" data-content-field="main-content">
+    <main role="main" data-content-field="main-content">
 
       {#  Hero video  }
       <div class="hero__video">
