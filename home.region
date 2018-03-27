@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-  <!-- include system scripts, page meta, and header code injection -->
+  {#  Include system scripts, page meta, and header code injection  }
   {squarespace-headers}
 
 </head>
@@ -13,7 +13,7 @@
 
   <div class="site-container">
 
-    <!-- Navbar -->
+    {#  Navbar  }
     <header>
       {@|apply menu.block}
       {@|apply navbar.block}
@@ -21,7 +21,7 @@
 
     <main class="content-container" role="main" data-content-field="main-content">
 
-      <!-- Hero video loop -->
+      {#  Hero video  }
       <div class="hero__video">
         <div class="util__z-above-overlay text-container ">
           <div class="page__headline util__text-red">
@@ -38,7 +38,7 @@
         <div class="util__overlay-blue"></div>
       </div>
 
-      <!-- Client section -->
+      {#  Clients section  }
       <div class="text-container scroll-reveal">
         <div class="page__headline util__text-red">
           <squarespace:block-field id="home__partners-header" columns="12" lock-layout="true"/>
@@ -48,7 +48,7 @@
         </div>
       </div>
 
-      <!-- Client logos carousel -->
+      {#  Client logos carousel  }
       <div class="clients scroll-reveal">
         <div class="clients__row">
           <div class="clients__tile">
@@ -85,7 +85,7 @@
         </div>
       </div>
 
-      <!-- Selected case studies -->
+      {#  Selected case studies  }
       <div class="projects scroll-reveal">
         <div class="projects__tile-home"></div>
         <div class="projects__tile-home"></div>
@@ -97,7 +97,7 @@
         <div class="projects__tile-home"></div>
       </div>
 
-      <!-- CTA -->
+      {#  Call to action  }
       <div class="cta scroll-reveal">
         <div class="page__headline util__text-red">
           <squarespace:block-field id="home__cta-header" columns="12" lock-layout="true"/>
@@ -113,21 +113,21 @@
       </div>
     </main>
 
-    <!--Footer -->
+    {#  Footer  }
     <footer>
       {@|apply footer.block}
     </footer>
 
   </div>
 
-  <!-- combo and minify scripts when not logged in -->
+  {#  Combo and minify scripts when not logged in  }
   <squarespace:script src="lib/headroom.min.js" combo="true" />
   <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
   <squarespace:script src="clientsCarousel.js" combo="true" />
   <squarespace:script src="projectTiles.js" combo="true" />
   <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
-  <!-- other scripts, and footer code injection -->
+  {#  Other Squarespace scripts, and footer code injection  }
   {squarespace-footers}
 
 </body>

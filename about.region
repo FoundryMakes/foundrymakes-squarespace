@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-  <!-- include system scripts, page meta, and header code injection -->
+  {#  Include system scripts, page meta, and header code injection  }
   {squarespace-headers}
 
 </head>
@@ -13,7 +13,7 @@
 
   <div class="site-container">
 
-    <!-- Navbar -->
+    {#  Navbar  }
     <header>
       {@|apply menu.block}
       {@|apply navbar.block}
@@ -21,7 +21,7 @@
 
     <main class="content-container" role="main" data-content-field="main-content">
 
-      <!-- Hero image -->
+      {#  Hero image  }
       <div class="hero__image">
         <div class="util__z-above-overlay text-container ">
           <div class="page__title">
@@ -38,7 +38,7 @@
         <div class="util__overlay-blue"></div>
       </div>
 
-      <!-- Team section -->
+      {#  Team section  }
       <div class="text-container scroll-reveal">
         <div class="page__headline util__text-red">
           <squarespace:block-field id="about__team-header" columns="12" lock-layout="true"/>
@@ -48,12 +48,12 @@
         </div>
       </div>
 
-      <!-- Team photos -->
+      {#  Team photos  }
       <div class="team-photos scroll-reveal">
         <div class="hidden-images"></div>
       </div>
 
-      <!-- Services section -->
+      {#  Services section  }
       <div class="text-container scroll-reveal">
         <div class="page__headline util__text-red">
           <squarespace:block-field id="about__services-header" columns="12" lock-layout="true"/>
@@ -63,7 +63,7 @@
         </div>
       </div>
 
-      <!-- Leadership section -->
+      {#  Leadership section  }
       <div class="text-container scroll-reveal">
         <div class="page__headline util__text-red">
           <squarespace:block-field id="about__leadership-header" columns="12" lock-layout="true" />
@@ -87,7 +87,7 @@
         </div>
       </div>
 
-      <!-- CTA -->
+      {#  Call to action  }
       <div class="cta scroll-reveal">
         <div class="page__headline util__text-red">
           <squarespace:block-field id="about__cta-header" columns="12" lock-layout="true"/>
@@ -103,21 +103,21 @@
       </div>
     </main>
 
-    <!--Footer -->
+    {#  Footer  }
     <footer>
       {@|apply footer.block}
     </footer>
 
   </div>
 
-  <!-- combo and minify scripts when not logged in -->
+  {#  Combo and minify scripts when not logged in  }
   <squarespace:script src="lib/headroom.min.js" combo="true" />
   <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
   <squarespace:script src="lib/underscore.min.js" combo="true" />
   <squarespace:script src="teamPhotos.js" combo="true" />
   <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
-  <!-- other scripts, and footer code injection -->
+  {#  Other Squarespace scripts, and footer code injection  }
   {squarespace-footers}
 
 </body>

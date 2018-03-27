@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-  <!-- include system scripts, page meta, and header code injection -->
+  {#  Include system scripts, page meta, and header code injection  }
   {squarespace-headers}
 
 </head>
@@ -13,7 +13,7 @@
 
   <div class="site-container">
 
-    <!-- Navbar -->
+    {#  Navbar  }
     <header>
       {@|apply menu.block}
       {@|apply navbar.block}
@@ -21,7 +21,7 @@
 
     <main class="content-container" role="main" data-content-field="main-content">
 
-      <!-- HQ section -->
+      {#  Headquarters section  }
       <div class="text-container util__bg-blue scroll-reveal">
         <div class="page__headline util__text-red">
           <squarespace:block-field id="contact__hq-header" columns="12" lock-layout="true"/>
@@ -39,12 +39,12 @@
         </div>
       </div>
 
-      <!-- Map section -->
+      {#  Map  }
       <div class="hero__image">
         <div id="map" style="height: 100%; width: 100%"></div>
       </div>
 
-      <!-- SF section -->
+      {#  San Francisco office  }
       <div class="text-container scroll-reveal">
         <div class="page__headline util__text-red">
           <squarespace:block-field id="contact__sf-header" columns="12" lock-layout="true"/>
@@ -63,20 +63,20 @@
       </div>
     </main>
 
-    <!--Footer -->
+    {#  Footer  }
     <footer>
       {@|apply footer.block}
     </footer>
 
   </div>
 
-  <!-- combo and minify scripts when not logged in -->
+  {#  Combo and minify scripts when not logged in  }
   <squarespace:script src="lib/headroom.min.js" combo="true" />
   <squarespace:script src="lib/mapbox-0.40.0.min.js" combo="true" />
   <squarespace:script src="contactMap.js" combo="true" />
   <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
-  <!-- other scripts, and footer code injection -->
+  {#  Other Squarespace scripts, and footer code injection  }
   {squarespace-footers}
 
 </body>
