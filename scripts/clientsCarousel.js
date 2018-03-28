@@ -1,7 +1,7 @@
 (function() {
   'use strict';
-  
-  var clientRows = document.querySelectorAll('.clients__row');
+
+  var clientRows = document.querySelectorAll('.clients-carousel__row');
   var rowCounter = 0;
 
   (function () {
@@ -15,8 +15,8 @@
   }
 
   function fadeOut() {
-    clientRows[rowCounter].classList.add('clients__row-fade-out');
-    clientRows[rowCounter].classList.remove('clients__row-fade-in');
+    clientRows[rowCounter].classList.add('clients-carousel__row-fade-out');
+    clientRows[rowCounter].classList.remove('clients-carousel__row-fade-in');
   }
 
   function incrementRowCounter() {
@@ -24,9 +24,9 @@
   }
 
   function fadeIn() {
-    clientRows[rowCounter].classList.add('clients__row-fade-in');
-    clientRows[rowCounter].classList.remove('clients__row-fade-out');
-    clientRows[rowCounter].classList.remove('clients__row-inactive');
+    clientRows[rowCounter].classList.add('clients-carousel__row-fade-in');
+    clientRows[rowCounter].classList.remove('clients-carousel__row-fade-out');
+    clientRows[rowCounter].classList.remove('clients-carousel__row-inactive');
   }
 
 }());
