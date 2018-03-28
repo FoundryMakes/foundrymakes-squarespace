@@ -24,15 +24,9 @@
       {#  Hero image  }
       <div class="hero__image">
         <div class="util__z-above-overlay text-container ">
-          <div class="page__title">
-            <squarespace:block-field id="projects__hero-title" columns="12" lock-layout="true"/>
-          </div>
-          <div class="page__headline util__text-red">
-            <squarespace:block-field id="projects__hero-header" columns="12" lock-layout="true"/>
-          </div>
-          <div class="page__subheadline util__text-white">
-            <squarespace:block-field id="projects__hero-description" columns="12" lock-layout="true"/>
-          </div>
+          <squarespace:block-field id="projects__hero-title" class="page__title util__text-white util__text-white" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="projects__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="projects__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
         </div>
         <img src="/assets/images/hero__work.jpg">
       </div>

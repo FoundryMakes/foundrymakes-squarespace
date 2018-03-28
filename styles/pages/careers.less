@@ -1,5 +1,9 @@
 /* Styles for the careers page and detail
 ***************************************************/
+.careers__list {
+  padding: 5vw;
+}
+
 .careers__item {
   box-sizing: border-box;
   border-bottom: 1px solid @mediumgray;
@@ -16,15 +20,6 @@
 
   p {
     width: 80%;
-    font-family: @regular-font, @generic-fonts;
-    color: @blue;
-
-    @media @for-phone-only {
-      font-size: 4.5vw;
-    }
-    @media @for-tablet-portrait-up {
-      font-size: 1.75vw;
-    }
   }
 
   path {
@@ -63,71 +58,8 @@
 }
 
 .careers__title {
-  font-family: @medium-font, @generic-fonts;
-  color: @blue;
-  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 1vw;
-
-  @media @for-phone-only {font-size: 4.75vw;}
-  @media @for-tablet-portrait-up {font-size: 2.5vw;}
-}
-
-.careers__none {
-  font-family: @medium-font, @generic-fonts;
-  color: @blue;
-
-  @media @for-phone-only {font-size: 4.75vw;}
-  @media @for-tablet-portrait-up {font-size: 2.5vw;}
-}
-
-.careers__detail {
-  font-family: @regular-font, @generic-fonts;
-  color: @blue;
-  font-size: 18px;
-  line-height: 24px;
-
-  h1 {
-    font-family: @medium-font, @generic-fonts;
-    color: @blue;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 2vw;
-
-    @media @for-phone-only {font-size: 4.75vw;}
-    @media @for-tablet-portrait-up {font-size: 2.5vw;}
-  }
-
-  h2 {
-    font-family: @medium-font, @generic-fonts;
-    color: @blue;
-    text-transform: uppercase;
-    margin-bottom: 0;
-
-    @media @for-phone-only {
-      font-size: 3.75vw;
-      margin-top: 8vw;
-    }
-    @media @for-tablet-portrait-up {
-      font-size: 1.75vw;
-      margin-top: 3vw;
-    }
-  }
-
-  a {
-    color: @blue;
-    text-decoration: none;
-    font-family: @bold-font;
-    transition: all .4s ease;
-
-    &:visited, &:active {
-      color: @blue;
-    }
-
-    &:hover {
-      color: @red;
-    }
-  }
 }
 
 .careers__back-arrow-link {

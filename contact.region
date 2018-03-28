@@ -23,20 +23,12 @@
 
       {#  Headquarters section  }
       <div class="text-container util__bg-blue scroll-reveal">
-        <div class="page__headline util__text-red">
-          <squarespace:block-field id="contact__hq-header" columns="12" lock-layout="true"/>
-        </div>
-        <div class="page__subheadline util__text-white">
-          <squarespace:block-field id="contact__hq-address" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="contact__hq-header" class="util__text-red" class="page__headline util__text-white util__text-uppercase" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="contact__hq-address" columns="12" class="util__text-red" lock-layout="true"/>
         <hr class="rule__white">
-        <div class="page__subheadline util__text-white">
-          <squarespace:block-field id="contact__hq-phone" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="contact__hq-phone" class="util__text-white" columns="12" lock-layout="true"/>
         <hr class="rule__white">
-        <div class="page__subheadline util__text-white">
-          <squarespace:block-field id="contact__hq-email" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="contact__hq-email" class="util__text-white" columns="12" lock-layout="true"/>
       </div>
 
       {#  Map  }
@@ -46,20 +38,12 @@
 
       {#  San Francisco office  }
       <div class="text-container scroll-reveal">
-        <div class="page__headline util__text-red">
-          <squarespace:block-field id="contact__sf-header" columns="12" lock-layout="true"/>
-        </div>
-        <div class="page__subheadline util__text-blue">
-          <squarespace:block-field id="contact__sf-address" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="contact__sf-header" class="util__text-red" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="contact__sf-address" columns="12" lock-layout="true"/>
         <hr class="rule__blue">
-        <div class="page__subheadline util__text-blue">
-          <squarespace:block-field id="contact__sf-phone" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="contact__sf-phone" columns="12" lock-layout="true"/>
         <hr class="rule__blue">
-        <div class="page__subheadline util__text-blue">
-          <squarespace:block-field id="contact__sf-email" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="contact__sf-email" columns="12" lock-layout="true"/>
       </div>
     </main>
 

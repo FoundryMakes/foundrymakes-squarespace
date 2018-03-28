@@ -1,5 +1,5 @@
 {.repeated section items}
   {.section collection}
-    <a class="menu__item" href="{fullUrl}">{navigationTitle}</a>
+    <a class="menu__item util__text-uppercase" href="{fullUrl}">{navigationTitle}</a>
   {.end}
 {.end}

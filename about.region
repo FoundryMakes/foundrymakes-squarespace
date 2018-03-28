@@ -24,15 +24,9 @@
       {#  Hero image  }
       <div class="hero__image">
         <div class="util__z-above-overlay text-container ">
-          <div class="page__title">
-            <squarespace:block-field id="about__hero-title" columns="12" lock-layout="true"/>
-          </div>
-          <div class="page__headline util__text-red">
-            <squarespace:block-field id="about__hero-header" columns="12" lock-layout="true"/>
-          </div>
-          <div class="page__subheadline util__text-white">
-            <squarespace:block-field id="about__hero-description" columns="12" lock-layout="true"/>
-          </div>
+          <squarespace:block-field id="about__hero-title" class="page__title util__text-white util__text-uppercase" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="about__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="about__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
         </div>
         <img src="/assets/images/hero__about.jpg">
         <div class="util__overlay-blue"></div>
@@ -40,12 +34,8 @@
 
       {#  Team section  }
       <div class="text-container scroll-reveal">
-        <div class="page__headline util__text-red">
-          <squarespace:block-field id="about__team-header" columns="12" lock-layout="true"/>
-        </div>
-        <div class="page__subheadline util__text-blue">
-          <squarespace:block-field id="about__team-description" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="about__team-header" class="util__text-red" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="about__team-description" columns="12" lock-layout="true"/>
       </div>
 
       {#  Team photos  }
@@ -55,19 +45,14 @@
 
       {#  Services section  }
       <div class="text-container scroll-reveal">
-        <div class="page__headline util__text-red">
-          <squarespace:block-field id="about__services-header" columns="12" lock-layout="true"/>
-        </div>
-        <div class="page__subheadline util__text-blue">
-          <squarespace:block-field id="about__services-description" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="about__services-header" class="util__text-red" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="about__services-description" columns="12" lock-layout="true"/>
       </div>
 
       {#  Leadership section  }
       <div class="text-container scroll-reveal">
-        <div class="page__headline util__text-red">
-          <squarespace:block-field id="about__leadership-header" columns="12" lock-layout="true" />
-        </div>
+        <squarespace:block-field id="about__leadership-header" class="util__text-red" columns="12" lock-layout="true" />
+        
         <div class="leadership-photos">
           <div class="leadership-photos__tile">
             <img src="/assets/images/leadership__kurt.jpg" style="transform: rotate(7deg)" />
@@ -89,12 +74,8 @@
 
       {#  Call to action  }
       <div class="cta scroll-reveal">
-        <div class="page__headline util__text-red">
-          <squarespace:block-field id="about__cta-header" columns="12" lock-layout="true"/>
-        </div>
-        <div class="page__subheadline util__text-blue">
-          <squarespace:block-field id="about__cta-description" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="about__cta-header" class="util__text-red" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="about__cta-description" columns="12" lock-layout="true"/>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="cta__arrow">
           <title>Right Arrow</title>
           <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>

@@ -24,15 +24,9 @@
       {#  Hero video  }
       <div class="hero__video">
         <div class="util__z-above-overlay text-container ">
-          <div class="page__title">
-            <squarespace:block-field id="workshop__hero-title" columns="12" lock-layout="true"/>
-          </div>
-          <div class="page__headline util__text-red">
-            <squarespace:block-field id="workshop__hero-header" columns="12" lock-layout="true"/>
-          </div>
-          <div class="page__subheadline util__text-white">
-            <squarespace:block-field id="workshop__hero-description" columns="12" lock-layout="true"/>
-          </div>
+          <squarespace:block-field id="workshop__hero-title" class=".page__title util__text-white util__text-uppercase" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="workshop__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="workshop__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
         </div>
         <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" class="util__grayscale">
           <source src="http://foundrymakes.com/uploads/video/gzMNwbmRsKsewX3Y.webm" type="video/webm"/>
@@ -43,12 +37,9 @@
 
       {#  Whiteboard section  }
       <div class="text-container">
-        <div class="page__headline util__text-red scroll-reveal">
-          <squarespace:block-field id="workshop__whiteboard-header" columns="12" lock-layout="true"/>
-        </div>
-        <div class="page__subheadline util__text-blue scroll-reveal">
-          <squarespace:block-field id="workshop__whiteboard-description" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="workshop__whiteboard-header" class="util__text-red" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="workshop__whiteboard-description" columns="12" lock-layout="true"/>
+        
         <div class="whiteboard">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 922 753.15" id="whiteboard" stroke="black">
             <title>whiteboard</title>
@@ -111,22 +102,14 @@
 
       {#  Deliverables section  }
       <div class="text-container util__bg-blue scroll-reveal">
-        <div class="page__headline util__text-red">
-          <squarespace:block-field id="workshop__deliverables-header" columns="12" lock-layout="true"/>
-        </div>
-        <div class="page__subheadline util__text-white">
-          <squarespace:block-field id="workshop__deliverables-description" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="workshop__deliverables-header" class="util__text-red" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="workshop__deliverables-description" class="util__text-white" columns="12" lock-layout="true"/>
       </div>
 
       {#  Call to action  }
       <div class="cta scroll-reveal">
-        <div class="page__headline util__text-red">
-          <squarespace:block-field id="workshop__cta-header" columns="12" lock-layout="true"/>
-        </div>
-        <div class="page__subheadline util__text-blue">
-          <squarespace:block-field id="workshop__cta-description" columns="12" lock-layout="true"/>
-        </div>
+        <squarespace:block-field id="workshop__cta-header" class="util__text-red" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="workshop__cta-description" columns="12" lock-layout="true"/>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="cta__arrow">
           <title>Right Arrow</title>
           <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
