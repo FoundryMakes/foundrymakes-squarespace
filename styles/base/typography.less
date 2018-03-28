@@ -1,51 +1,118 @@
-/* Legibility
-***************************************************/
-h1, h2, h3, h4, h5, h6, p {
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {     -webkit-font-smoothing: subpixel-antialiased; }
-
 /* Baseline typography
+/* adapted from http://typecast.com/blog/a-more-modern-scale-for-web-typography
 ***************************************************/
 body {
   font-family: @regular-font, @generic-fonts;
+  font-size: 100%;
   color: @blue;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) { -webkit-font-smoothing: subpixel-antialiased; }
+}
+
+.site-container {
+  /* equivalent to 16px */
+  font-size: 1em;
+  /* equivalent to 20px */
+  line-height: 1.25;
+
+  @media @for-tablet-portrait-up {
+    /* equivalent to 16px */
+    font-size: 1em;
+    /* equivalent to 22px */
+    line-height: 1.375;
+  }
 }
 
 h1 {
   font-family: @bold-font, @generic-fonts;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.5vw;
+  
+  /* 2x body copy size = 32px */
+  font-size: 2em;
+  /* 45px / 36px */
+  line-height: 1.25;
 
-  @media @for-phone-only {font-size: 6.75vw;}
-  @media @for-tablet-portrait-up {font-size: 4vw;}
+  @media @for-tablet-portrait-up {
+    /* 2.5x body copy size = 40px */
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+  
+  @media @for-tablet-landscape-up {
+    /* 3x body copy size = 48px */
+    font-size: 3em;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+    line-height: 1.05;
+  }
 }
 
 h2 {
-  font-family: @regular-font, @generic-fonts;
-  margin: 0;
+  /* 1.625x body copy size = 26px */
+  font-size: 1.625em;
+  /* 30px / 26px */
+  line-height: 1.15384615;
 
-  @media @for-phone-only {font-size: 6.75vw;}
-  @media @for-tablet-portrait-up {font-size: 4vw;}
+  @media @for-tablet-portrait-up {
+      /* 2x body copy size = 32px */
+      font-size: 2em;
+      line-height: 1.25;
+  }
+  
+  @media @for-tablet-landscape-up {
+    /* 2.25x body copy size = 36px */
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
 }
 
 h3 {
-  font-family: @regular-font, @generic-fonts;
-  margin: 0;
+  /* 1.375x body copy size = 22px */
+  font-size: 1.375em;
+  /* 25px / 22px */
+  line-height: 1.13636364;
 
-  @media @for-phone-only {font-size: 5vw;}
-  @media @for-tablet-portrait-up {font-size: 3vw;}
+  @media @for-tablet-portrait-up {
+    /* 1.5x body copy size = 24px */
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  @media @for-tablet-landscape-up {
+      /* 1.75x body copy size = 28px */
+      font-size: 1.75em;
+      line-height: 1.25;
+  }
 }
 
-p {
-  line-height: 1.15;
-  @media @for-phone-only {font-size: 4.25vw;}
-  @media @for-tablet-portrait-up {font-size: 2vw;}
+h4 {
+  /* 1.125x body copy size = 18px */
+  font-size: 1.125em;
+  line-height: 1.11111111;
+
+  @media @for-tablet-portrait-up {
+    /* (22px / 18px */
+    line-height: 1.22222222;
+  }
+}
+
+blockquote {
+  /* 20px / 16px */
+  font-size: 1.25em;
+  /* 25px / 20px */
+  line-height: 1.25;
+
+  @media @for-tablet-portrait-up {
+    /* 24px / 16px = */
+    font-size: 1.5em;
+    /* 35px / 24px */
+    line-height: 1.45833333;
+  }
 }
 
 a {
@@ -66,41 +133,16 @@ a {
 }
 
 /* Custom typography
+/* Elements that deviate from baseline tyopgraphy
 ***************************************************/
 .page__title {
-  margin-bottom: 3vw;
+  font-family: @medium-font, @generic-fonts;
+  text-transform: uppercase;
+  color: @white;
+
+  /* 1.125x body copy size = 20px */
+  font-size: 1.25em;
+  line-height: 1.25;
   
-  p {
-    font-family: @medium-font, @generic-fonts;
-    color: @white;
-    text-transform: uppercase;
-    @media @for-phone-only {font-size: 3.25vw;}
-    @media @for-tablet-portrait-up {font-size: 1.5vw;}
-  }
-}
-
-.page__headline {
-  p {
-    font-family: @bold-font, @generic-fonts;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0.5vw;
-
-    @media @for-phone-only {font-size: 6.75vw;}
-    @media @for-tablet-portrait-up {font-size: 4vw;}
-  }
-}
-
-.page__subheadline {
-  p, ul {
-    font-family: @regular-font, @generic-fonts;
-    margin: 0;
-
-    @media @for-phone-only {font-size: 6.75vw;}
-    @media @for-tablet-portrait-up {font-size: 4vw;}
-  }
-
-  ul {
-    margin-top: 3vw;
-  }
+  margin-bottom: 3vw;
 }
