@@ -28,8 +28,8 @@
           <squarespace:block-field id="home__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
         </div>
         <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" class="util__grayscale">
-          <source src="http://foundrymakes.com/uploads/video/t9VuOY7H6hPP0NuS.webm" type="video/webm"/>
-          <source src="http://foundrymakes.com/uploads/video/slyWoUpcU-KVpyGo.mp4" type="video/mp4"/>
+          <source src="https://foundrymakes.com/uploads/video/t9VuOY7H6hPP0NuS.webm" type="video/webm"/>
+          <source src="https://foundrymakes.com/uploads/video/slyWoUpcU-KVpyGo.mp4" type="video/mp4"/>
         </video>
         <div class="util__overlay-blue"></div>
       </div>
