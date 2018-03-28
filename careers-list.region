@@ -24,58 +24,38 @@
       {#  Hero image  }
       <div class="hero__image">
         <div class="util__z-above-overlay text-container ">
-          <div class="page__title">
-            <squarespace:block-field id="careers__hero-title" columns="12" lock-layout="true"/>
-          </div>
-          <div class="page__headline util__text-red">
-            <squarespace:block-field id="careers__hero-header" columns="12" lock-layout="true"/>
-          </div>
-          <div class="page__subheadline util__text-white">
-            <squarespace:block-field id="careers__hero-description" columns="12" lock-layout="true"/>
-          </div>
+          <squarespace:block-field id="careers__hero-title" class="page__title util__text-white util__text-uppercase" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="careers__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="careers__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
         </div>
         <img src="/assets/images/foundry__pattern-large.svg">
       </div>
 
       {.section collection}
 
-  <div class="index-list clearfix" data-controller="IndexController" data-collection-id="{collection.id}">
+        <div class="careers__list">
 
-  {.repeated section collections}
+        {.repeated section collections}
 
-    <div id="index-section-{urlId}" class="index-section index-page-transition-link">
-      <article class="index-item{.background-source-video?} has-item-video{.or}{.section mainImage} has-item-image{.end}{.end}" data-item-id="{id}" data-url-id="{urlId}"{.background-source-video?}{.or}{.section mainImage}{.if colorData} style="background-color: #{colorData.suggestedBgColor}"{.end}{.end}{.end}>
-        <a class="index-item-link intrinsic" href="{fullUrl}">
-          {.background-source-video?}
-            <figure data-controller="VideoBackground" class="index-item-image-wrapper js-index-item-image-wrapper">
-              {@|apply sqs-video-background.block}
-            </figure>
-          {.or}
-            {.section mainImage}<figure class="index-item-image-wrapper js-index-item-image-wrapper"><img class="index-item-image js-index-item-image loading" {@|image-meta} data-load="false" /></figure>{.end}
-          {.end}
-        </a>
-        <div class="index-item-text-wrapper<squarespace:category collection="{urlId}">{.if categories} has-categories{.end}</squarespace:category>">
-          <h2 class="index-item-title">
-            <a class="index-item-title-link" href="{fullUrl}"><span class="index-item-title-text">{navigationTitle}</span></a>
-          </h2>
+        <div class="careers__item">
+          <h2 class="util__text-red">{title}</h2>
+          <h3>{description}</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="careers__arrow">
+            <title>Right Arrow</title>
+            <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
+          </svg>
+          <a href="{fullUrl}" class="util__background-link"></a>
+        </div>
+        
+        {.or}
+        
+        <h2 class="careers__none">We currently have no open positions. Check back later for open opportunities.</h2>
 
-          {.equal? typeName "project"}
-            <squarespace:category collection="{urlId}" template="category-slugs" />
-          {.or}
-          {.equal? typeName "gallery"}
-            <squarespace:category collection="{urlId}" template="category-slugs" />
-          {.end}
-          {.end}
+        {.end}
 
         </div>
-      </article>
-    </div>
 
-  {.end}
-
-  </div>
-
-{.end}
+      {.end}
 
       {#  Footer  }
       <footer>
