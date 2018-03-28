@@ -1,16 +1,18 @@
 /* Styles for the footer
 ***************************************************/
 .footer {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 340px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  box-sizing: border-box;
-  width: 100vw;
-  min-height: 340px;
+  
   background-color: @blue;
-  color: @white;
   font-family: @light-font;
+  color: @white;
   font-size: 16px;
   line-height: 28px;
 
@@ -90,6 +92,7 @@
     font-family: @light-font, @generic-fonts;
     font-size: 16px !important;
     -moz-osx-font-smoothing: auto !important;
+    &::placeholder {opacity: 1; color: @white;}
     &::-webkit-input-placeholder { color: @white; }
     &::-moz-placeholder { color: @white; }
     &:-ms-input-placeholder { color: @white; }
@@ -104,8 +107,11 @@
     -webkit-border-radius: 0;
 
     // Change the color of the text on focus
-    &:focus {
+    &:focus,
+    &:invalid {
       color: @blue;
+      outline: none;
+      box-shadow: none;
     }
 
     // Override weird highlights and focus states
