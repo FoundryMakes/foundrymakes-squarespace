@@ -4,10 +4,28 @@
   text-transform: uppercase;
 }
 
+/* Color mods
+***************************************************/
+.util__text-blue {
+  color: @blue;
+}
+
+.util__text-red {
+  color: @red;
+}
+
+.util__text-white {
+  color: @white;
+}
+
+.util__bg-blue {
+  background-color: @blue;
+}
+
 /* Display mods
 ***************************************************/
 .util__hidden {
-  display:none;
+  display: none;
 }
 
 /* Overlay mods
@@ -21,60 +39,6 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 51, 78, 0.75);
-}
-
-/* Alignment mods
-***************************************************/
-.util__align-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.util__align-top-center {
-  display: flex;
-  justify-content: center;
-
-  @media @for-phone-only {
-    align-items: center;
-    flex-direction: column;
-  }
-  @media @for-tablet-portrait-up {padding-top: 1vh;}
-}
-
-.util__align-bottom-right {
-  @media @for-phone-only {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  @media @for-tablet-portrait-up {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-}
-
-/* Image dimension mods
-***************************************************/
-.util__80-tall-image img {height: 80%;}
-.util__70-tall-image img {height: 70%;}
-.util__60-tall-image img {height: 60%;}
-
-.util__80-wide-image img {
-  @media @for-tablet-portrait-up {height: 80%;}
-  @media @for-tablet-portrait-up {width: 80%;}
-}
-
-.util__70-wide-image img {
-  @media @for-tablet-portrait-up {height: 70%;}
-  @media @for-tablet-portrait-up {width: 70%;}
-}
-.util__60-wide-image img {
-  @media @for-tablet-portrait-up {height: 60%;}
-  @media @for-tablet-portrait-up {width: 60%;}
 }
 
 /* Z-index mods
@@ -104,31 +68,4 @@
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.hide__mobile {
-  @media @for-phone-only {display: none;}
-}
-
-.show__mobile {
-  display: none;
-  @media @for-phone-only {display: initial;}
-}
-
-/* Color mods
-***************************************************/
-.util__text-blue {
-  color: @blue;
-}
-
-.util__text-red {
-  color: @red;
-}
-
-.util__text-white {
-  color: @white;
-}
-
-.util__bg-blue {
-  background-color: @blue;
 }
