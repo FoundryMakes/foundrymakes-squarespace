@@ -1,22 +1,42 @@
 /* Styles for the careers page and detail
 ***************************************************/
 .careers__list {
-  padding: 5vw;
+  @media @for-phone-only {
+    padding: 3vh 4vh 3vh 4vh;
+  }
+  @media @for-tablet-portrait-up {
+    padding: 3vw 9vw 3vw 9vw;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  hr {
+    @media @for-phone-only {
+      margin-top: 5vw;
+      margin-bottom: 5vw;
+    }
+    @media @for-tablet-portrait-up {
+      margin-top: 5vw;
+      margin-bottom: 5vw;
+    }
+  }
 }
 
 .careers__item {
+  display: block;
   box-sizing: border-box;
-  border-bottom: 1px solid @mediumgray;
   position: relative;
-
-  @media @for-phone-only {
-    padding-bottom: 5vw;
-    padding-top: 5vw;
-  }
-  @media @for-tablet-portrait-up {
-    padding-bottom: 3vw;
-    padding-top: 3vw;
-  }
 
   p {
     width: 80%;
@@ -31,8 +51,8 @@
       fill: @red;
     }
 
-    .careers__title {
-      color: @red;
+    h2 {
+      color: @blue;
     }
   }
 }
@@ -42,17 +62,12 @@
 
   @media @for-phone-only {
     height: 4.75vw;
-    top: 5vw;
+    top: 0;
     right: 0;
   }
   @media @for-tablet-portrait-up {
     height: 2.5vw;
-    top: 3vw;
-    right: 0;
-  }
-  @media @for-tablet-landscape-up {
-    height: 2.5vw;
-    top: 3vw;
+    top: 0;
     right: 0;
   }
 }

@@ -37,15 +37,16 @@
 
         {.repeated section collections}
 
-        <div class="careers__item">
+        <a href="{fullUrl}" class="careers__item">
           <h2 class="util__text-red">{title}</h2>
           <h3>{description}</h3>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="careers__arrow">
             <title>Right Arrow</title>
             <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
           </svg>
-          <a href="{fullUrl}" class="util__background-link"></a>
-        </div>
+        </a>
+
+        <hr class="rule__blue">
         
         {.or}
         
