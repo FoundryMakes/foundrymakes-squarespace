@@ -11,7 +11,7 @@
   request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
       var data = JSON.parse(request.responseText);
-      var images = _.shuffle(data.items);
+      var images = shuffle(data.items);
 
       var initialImages = images.slice(0,8);
       var initialElements = '';
@@ -37,11 +37,28 @@
     }
   };
 
-    request.onerror = function() {
-      // There was a connection error of some sort
-    };
+  request.onerror = function() {
+    // There was a connection error of some sort
+  };
 
-    request.send();
+  request.send();
   })();
 
 }());
+
+/**
+ * Shuffles an array.
+ * @param {Array} array An array containing the items.
+ */
+function shuffle(array) {
+  var counter = array.length;
+  while (counter > 0) {
+    var index = Math.floor(Math.random() * counter);
+    counter--;
+    
+    var temp = array[counter];
+    array[counter] = array[index];
+    array[index] = temp;
+  }
+  return array;
+}
