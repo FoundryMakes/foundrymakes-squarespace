@@ -30,8 +30,9 @@
   position: relative;
   overflow: hidden;
 
-  @media @for-phone-only {height: 80vw}
-  @media @for-tablet-portrait-up {height: 40vw}
+  @media @for-phone-only {height: 80vh}
+  @media @for-tablet-portrait-up {height: 50vw}
+  @media @for-tablet-landscape-up {height: 40vw}
 
   video {
     padding: 0;
@@ -61,8 +62,9 @@
   position: relative;
   overflow: hidden;
 
-  @media @for-phone-only {height: 100vw}
-  @media @for-tablet-portrait-up {height: 40vw}
+  @media @for-phone-only {height: 80vh}
+  @media @for-tablet-portrait-up {height: 50vw}
+  @media @for-tablet-landscape-up {height: 40vw}
 
   img {
     width:100%;
@@ -79,7 +81,7 @@
   z-index: @z-content;
 
   @media @for-phone-only {
-    padding: 9vh 4vh 3vh 4vh;
+    padding: 9vh 4vh 9vh 4vh;
   }
   @media @for-tablet-portrait-up {
     padding: 8vw 9vw 8vw 9vw;

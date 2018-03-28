@@ -29,6 +29,7 @@
           <squarespace:block-field id="projects__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
         </div>
         <img src="/assets/images/hero__work.jpg">
+        <div class="util__overlay-blue"></div>
       </div>
 
       {.section collection}
