@@ -24,7 +24,7 @@
       {#  Hero image  }
       <div class="hero__image">
         <div class="util__z-above-overlay text-container ">
-          <squarespace:block-field id="projects__hero-title" class="page__title util__text-white util__text-white" columns="12" lock-layout="true"/>
+          <squarespace:block-field id="projects__hero-title" class="page__title util__text-white util__text-uppercase" columns="12" lock-layout="true"/>
           <squarespace:block-field id="projects__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
           <squarespace:block-field id="projects__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
         </div>
@@ -41,7 +41,7 @@
         <a class="projects__tile util__mt-5 scroll-reveal" href="{fullUrl}">
           <img src="{mainImage.assetUrl}" alt="{navigationTitle}" />
           <h3><strong>{navigationTitle}</strong> &mdash; {description}</h3>
-          <span>View Case Study</span>
+          <span>View Project</span>
         </a>
 
         {.end}

@@ -11,13 +11,13 @@
       var data = JSON.parse(request.responseText);
       
       var image1 = '<a class="projects__tile" href="'+ data.collection.collections[0].fullUrl +'"><img src="'+ data.collection.collections[0].mainImage.assetUrl +'" alt="'+ data.collection.collections[0].navigationTitle +'" />';
-      var description1 = '<h3><strong>'+ data.collection.collections[0].navigationTitle +'</strong> &mdash; ' + data.collection.collections[0].description + '</h3><span>View Case Study</span></a>';
+      var description1 = '<h3><strong>'+ data.collection.collections[0].navigationTitle +'</strong> &mdash; ' + data.collection.collections[0].description + '</h3><span>View Project</span></a>';
 
       var image2 = '<a class="projects__tile" href="'+ data.collection.collections[1].fullUrl +'"><img src="'+ data.collection.collections[1].mainImage.assetUrl +'" alt="'+ data.collection.collections[1].navigationTitle +'" />';
-      var description2 = '<h3><strong>'+ data.collection.collections[1].navigationTitle +'</strong> &mdash; ' + data.collection.collections[1].description + '</h3><span>View Case Study</span></a>';
+      var description2 = '<h3><strong>'+ data.collection.collections[1].navigationTitle +'</strong> &mdash; ' + data.collection.collections[1].description + '</h3><span>View Project</span></a>';
 
       var image3 = '<a class="projects__tile" href="'+ data.collection.collections[2].fullUrl +'"><img src="'+ data.collection.collections[2].mainImage.assetUrl +'" alt="'+ data.collection.collections[2].navigationTitle +'" />';
-      var description3 = '<h3><strong>'+ data.collection.collections[2].navigationTitle +'</strong> &mdash; ' + data.collection.collections[2].description + '</h3><span>View Case Study</span></a>';
+      var description3 = '<h3><strong>'+ data.collection.collections[2].navigationTitle +'</strong> &mdash; ' + data.collection.collections[2].description + '</h3><span>View Project</span></a>';
 
       projectTiles.innerHTML = image1 + description1 + image2 + description2 + image3 + description3;
     } else {
