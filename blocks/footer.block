@@ -1,14 +1,15 @@
 <div class="footer">
   
   {#  Footer icon  }
-  <div class="footer__lettermark"><a href="/" title="Foundry">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.39 46.26" class="footer__lettermark-icon">
-        <title>Foundry Lettermark</title>
-        <g fill="#ef4135">
-          <path d="M0 0v46.26h39.39V0zm36.14 43H3.25V3.25h32.89z"></path>
-          <path d="M29.27 13.73v-3.25H10.12v25.3h3.25V24.76h12.65V21.5H13.37v-7.77h15.9z"></path>
-        </g>
-      </svg></a></div>
+  <a class="footer__lettermark" href="/" title="Foundry">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.39 46.26">
+      <title>Foundry Lettermark</title>
+      <g fill="#ef4135">
+        <path d="M0 0v46.26h39.39V0zm36.14 43H3.25V3.25h32.89z"></path>
+        <path d="M29.27 13.73v-3.25H10.12v25.3h3.25V24.76h12.65V21.5H13.37v-7.77h15.9z"></path>
+      </g>
+    </svg>
+  </a>
   
   {#  Copyright  }
   <div class="footer__copy">&copy; Foundry - All Rights Reserved.</div>
@@ -17,7 +18,8 @@
   <div class="footer__nav util__mobile-hidden">
     <squarespace:navigation navigationId="menuNav" template="footer-nav" />
   </div>
-  <div class="footer__contact"><a href="mailto:info@foundrymakes.com?Subject=Hello%20Foundry" title="Email Foundry" target="_blank" class="footer__link">info@foundrymakes.com &nbsp; &nbsp;</a>
+  <div class="footer__contact">
+    <div><a href="mailto:info@foundrymakes.com?Subject=Hello%20Foundry" title="Email Foundry" target="_blank" class="footer__link">info@foundrymakes.com</a></div>
     <div>T &nbsp;<a href="tel:61222342026" title="Call Foundry" class="footer__link">612 234 2026</a></div>
   </div>
   
