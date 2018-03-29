@@ -138,9 +138,15 @@ a {
 .page__title {
   font-family: @medium-font, @generic-fonts;
 
-  /* 1.125x body copy size = 20px */
-  font-size: 1.25em;
+  /* 1.125x body copy size = 18px */
+  font-size: 1em;
   line-height: 1.25;
+  margin-bottom: 2vw;
+
+  @media @for-tablet-portrait-up {
+    /* (22px / 18px */
+    line-height: 1.22222222;
+    margin-bottom: 3vw;
+  }
   
-  margin-bottom: 3vw;
 }
