@@ -2,21 +2,24 @@
   'use strict';
 
   var request = new XMLHttpRequest();
-  request.open('GET', '/project-tiles?format=json', true);
+  request.open('GET', '/work?format=json', true);
 
-  var projectTiles = document.querySelectorAll('.projects__tile-home');
+  var projectTiles = document.querySelector('.projects');
 
   request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
       var data = JSON.parse(request.responseText);
-      projectTiles.forEach(function(item, index){
-        var link = '<a href="' + data.items[index].clickthroughUrl + '" class="util__background-link"></a>'
-        var image = '<div class="projects__tile-image-container"><img src="'+ data.items[index].assetUrl +'" alt="'+ data.items[index].title +'" class="projects__tile-image"/></div>'
-        var overlay = '<div class="projects__tile-overlay"><div class="projects__tile-overlay-inner"><p class="projects__tile-overlay-client">'+ data.items[index].title +'</p><div class="projects__tile-overlay-title">'+ data.items[index].body +'</div></div></div>'
+      
+      var image1 = '<a class="projects__tile" href="'+ data.collection.collections[0].fullUrl +'"><img src="'+ data.collection.collections[0].mainImage.assetUrl +'" alt="'+ data.collection.collections[0].title +'" />';
+      var description1 = '<h3><strong>'+ data.collection.collections[0].title +'</strong> &mdash; ' + data.collection.collections[0].description + '</h3><span>View Case Study</span></a>';
 
-        projectTiles[index].innerHTML = link + image + overlay;
-        projectTiles[index].style.backgroundColor = data.items[index].tags[0]
-      })
+      var image2 = '<a class="projects__tile" href="'+ data.collection.collections[1].fullUrl +'"><img src="'+ data.collection.collections[1].mainImage.assetUrl +'" alt="'+ data.collection.collections[1].title +'" />';
+      var description2 = '<h3><strong>'+ data.collection.collections[1].title +'</strong> &mdash; ' + data.collection.collections[1].description + '</h3><span>View Case Study</span></a>';
+
+      var image3 = '<a class="projects__tile" href="'+ data.collection.collections[2].fullUrl +'"><img src="'+ data.collection.collections[2].mainImage.assetUrl +'" alt="'+ data.collection.collections[2].title +'" />';
+      var description3 = '<h3><strong>'+ data.collection.collections[2].title +'</strong> &mdash; ' + data.collection.collections[2].description + '</h3><span>View Case Study</span></a>';
+
+      projectTiles.innerHTML = image1 + description1 + image2 + description2 + image3 + description3;
     } else {
       // We reached our target server, but it returned an error
     }
@@ -27,5 +30,4 @@
   };
 
   request.send();
-
-}());
+})();

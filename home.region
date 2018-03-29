@@ -41,16 +41,7 @@
       </div>
 
       {#  Selected case studies  }
-      <div class="projects scroll-reveal">
-        <div class="projects__tile-home"></div>
-        <div class="projects__tile-home"></div>
-        <div class="projects__tile-home"></div>
-        <div class="projects__tile-home"></div>
-        <div class="projects__tile-home"></div>
-        <div class="projects__tile-home"></div>
-        <div class="projects__tile-home"></div>
-        <div class="projects__tile-home"></div>
-      </div>
+      <div class="projects scroll-reveal"></div>
 
       {#  Call to action  }
       <div class="cta scroll-reveal">
