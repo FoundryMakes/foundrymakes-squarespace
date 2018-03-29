@@ -49,10 +49,12 @@
   &:hover {
     path {
       fill: @red;
+      transition: all .4s ease;
     }
 
     h2 {
       color: @red;
+      transition: all .4s ease;
     }
   }
 }
@@ -72,11 +74,18 @@
   }
 }
 
-.careers__back-arrow-link {
-  position: relative;
+.careers__detail {
+  width: 70vw;
+  margin: auto;
+  margin-top: 6vmax;
+  margin-bottom: 6vmax;
+}
 
+.careers__back-arrow {
+  display: block;
+  
   path {
-    fill: @slate;
+    fill: @blue;
   }
 
   &:hover {
@@ -84,22 +93,22 @@
 
     path {
       fill: @red;
+      transition: all .4s ease;
     }
   }
-}
 
-.careers__back-arrow {
-
-  @media @for-phone-only {
-    height: 6vw;
-    margin-bottom: 8vw;
-  }
-  @media @for-tablet-portrait-up {
-    height: 6vw;
-    margin-bottom: 8vw;
-  }
-  @media @for-tablet-landscape-up {
-    height: 2.5vw;
-    margin-bottom: 4vw;
+  svg {
+    @media @for-phone-only {
+      height: 6vw;
+      margin-bottom: 8vw;
+    }
+    @media @for-tablet-portrait-up {
+      height: 6vw;
+      margin-bottom: 8vw;
+    }
+    @media @for-tablet-landscape-up {
+      height: 2.5vw;
+      margin-bottom: 4vw;
+    }
   }
 }

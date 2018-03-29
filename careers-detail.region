@@ -1,43 +1,51 @@
 <!doctype html>
 <html>
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    {#  Include system scripts, page meta, and header code injection  }
-    {squarespace-headers}
-  </head>
-  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+  {#  Include system scripts, page meta, and header code injection  }
+  {squarespace-headers}
 
-    <div class="site-container">
+</head>
 
-      {#  Navbar  }
-      <header>
-        {@|apply menu.block}
-        {@|apply navbar.block}
-      </header>
+<body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
-      {#  Content injection point  }
-      <main class="career-container" role="main" data-content-field="main-content">
-        <div class="career-content">
-          {squarespace.main-content}
-        </div>
-      </main>
+  <div class="site-container">
 
-      {#  Footer  }
-      <footer>
-        {@|apply footer.block}
-      </footer>
+    {#  Navbar  }
+    <header>
+      {@|apply menu.block}
+      {@|apply navbar.block}
+    </header>
 
-    </div>
+    {#  Content injection point  }
+    <main class="content-container" role="main" data-content-field="main-content">
+      <div class="careers__detail">
+      <a href="/careers" class="careers__back-arrow" title="Back to Careers">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41">
+          <title>Left Arrow</title>
+          <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
+        </svg>
+      </a>
+        {squarespace.main-content}
+      </div>
+    </main>
 
-    {#  Combo and minify scripts when not logged in  }
-    <squarespace:script src="lib/headroom.min.js" combo="true" />
-    <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
-    <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    {#  Footer  }
+    <footer>
+      {@|apply footer.block}
+    </footer>
 
-    {#  Other Squarespace scripts, and footer code injection  }
-    {squarespace-footers}
+  </div>
 
-  </body>
+  {#  Combo and minify scripts when not logged in  }
+  <squarespace:script src="lib/headroom.min.js" combo="true" />
+  <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
+  <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+
+  {#  Other Squarespace scripts, and footer code injection  }
+  {squarespace-footers}
+
+</body>
 </html>
