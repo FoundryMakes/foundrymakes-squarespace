@@ -38,7 +38,7 @@
         {.repeated section collections}
 
         <a href="{fullUrl}" class="careers__item">
-          <h2 class="util__text-red">{title}</h2>
+          <h2>{title}</h2>
           <h3>{description}</h3>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="careers__arrow">
             <title>Right Arrow</title>
