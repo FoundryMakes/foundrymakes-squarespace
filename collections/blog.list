@@ -1,67 +1,64 @@
+{#  Hero image  }
+<div class="hero__image">
+  <div class="util__z-above-overlay text-container ">
+    <squarespace:block-field id="blog__hero-title" class="page__title util__text-white util__text-uppercase" columns="12" lock-layout="true"/>
+    <squarespace:block-field id="blog__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
+    <squarespace:block-field id="blog__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
+  </div>
+  <img src="/assets/images/hero__blog.jpg">
+  <div class="util__overlay-blue"></div>
+</div>
 
-{.section categoryFilter}
-  <p class="filtered-by">Filtered by Category: {@|safe}</p>
-{.end}
-
-{.section tagFilter}
-  <p class="filtered-by">Filtered by Tag: {@|safe}</p>
-{.end}
-
-{.if authorFilter}
-  <p class="filtered-by">Filtered by Author: {author.displayName}</p>
-{.end}
-
-<!-- item loop -->
-{.repeated section items}
-
-  <article id="post-{id}" class="blog-list-item {@|item-classes}" data-item-id="{id}">
-    <!-- main image (thumbnail) -->
-    {.main-image?}
-      <a href="{fullUrl}" class="main-image content-fill">
-        <img {@|image-meta} />
-      </a>
-    {.end}
-    <!-- post title -->
-    <h1 class="title" data-content-field="title">
-      {.passthrough?}
-        <a href="{sourceUrl}" target="_blank">{title}</a>
-      {.or}
-        <a href="{fullUrl}">{title}</a>
-      {.end}
-    </h1>
-    <!-- excerpt or body -->
-    {.if excerpt}
+<div class="index-list clearfix blog" data-controller="IndexController" data-collection-id="{collection.id}">
+  {.repeated section items}
+  
+    <a id="post-{id}" class="blog__tile util__mt-5 scroll-reveal" href="{fullUrl}" data-item-id="{id}">
+      <div class="blog__tile-image">
+        {.main-image?}
+          <img {@|image-meta} />
+        {.end}
+      </div>
+      <p>{categories.0}</p>
+      <h3 data-content-field="title">{title}</h3>
       {excerpt}
-      <a class="link" href="{fullUrl}">Read More</a>
-    {.or}
-      {body}
-    {.end}
-  </article>
+    </a>
+  
+  {.or}
+  
+    {#  No items means no blog posts  }
+    <p><em>No blog posts yet.</em></p>
+  
+  {.end}
 
-{.or}
-
-  <!-- no items means no blog posts -->
-  <p><em>No blog posts yet.</em></p>
-
-{.end}
-
-<!-- pagination -->
-{.if pagination}
-  <nav class="blog-list-pagination">
-
-    <!-- newer page -->
-    {.if pagination.prevPage}
-      <a href="{pagination.prevPageUrl}">Newer</a>
-    {.or}
-      <a class="disabled">Newer</a>
-    {.end}
-
-    <!-- older page -->
-    {.if pagination.nextPage}
-      <a href="{pagination.nextPageUrl}">Older</a>
-    {.or}
-      <a class="disabled">Older</a>
-    {.end}
-
-  </nav>
-{.end}
+  {#  Pagination  }
+  {.if pagination}
+  <div class="pagination">
+    <div>
+      {.if pagination.prevPage}
+      <a class="pagination__container" href="{pagination.prevPageUrl}">
+        <div class="scroll-reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="pagination__left-arrow">
+            <title>Left Arrow</title>
+            <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
+          </svg>
+        </div>
+        <div class="pagination__text scroll-reveal">Newer</div>
+      </a>
+      {.end}
+    </div>
+    <div>
+      {.if pagination.nextPage}
+      <a style="justify-content:flex-end;" class="pagination__container scroll-reveal" href="{pagination.nextPageUrl}">
+        <div class="pagination__text scroll-reveal">Older</div>
+        <div class="scroll-reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="pagination__right-arrow">
+            <title>Right Arrow</title>
+            <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
+          </svg>
+        </div>
+      </a>
+      {.end}
+    </div>
+  </div>
+  {.end}
+</div>
