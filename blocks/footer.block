@@ -11,10 +11,10 @@
       </svg></a></div>
   
   {#  Copyright  }
-  <div class="footer__copy">&copy; Foundry - All Rights Reserved. &nbsp;&nbsp;</div>
+  <div class="footer__copy">&copy; Foundry - All Rights Reserved.</div>
   
   {#  Nav  }
-  <div class="footer__nav">
+  <div class="footer__nav util__mobile-hidden">
     <squarespace:navigation navigationId="menuNav" template="footer-nav" />
   </div>
   <div class="footer__contact"><a href="mailto:info@foundrymakes.com?Subject=Hello%20Foundry" title="Email Foundry" target="_blank" class="footer__link">info@foundrymakes.com &nbsp; &nbsp;</a>
@@ -37,7 +37,7 @@
               </div>
             </div>
 
-            <div class="newsletter-form-button-wrapper submit-wrapper">
+            <div class="newsletter-form-button-wrapper submit-wrapper util__mobile-hidden">
               <button class="newsletter-form-button sqs-system-button sqs-editable-button-layout sqs-editable-button-style sqs-editable-button-shape" type="submit" value="Sign Up">
               <span class="newsletter-form-spinner sqs-spin light large"></span>
               <span class="newsletter-form-button-label">Sign Up</span>
