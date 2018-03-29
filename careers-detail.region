@@ -22,12 +22,12 @@
     {#  Content injection point  }
     <main class="content-container" role="main" data-content-field="main-content">
       <div class="careers__detail">
-      <a href="/careers" class="careers__back-arrow" title="Back to Careers">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41">
-          <title>Left Arrow</title>
-          <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
-        </svg>
-      </a>
+        <a href="/careers" class="careers__back-arrow" title="Back to Careers">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41">
+            <title>Left Arrow</title>
+            <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
+          </svg>
+        </a>
         {squarespace.main-content}
       </div>
     </main>
