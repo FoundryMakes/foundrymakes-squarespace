@@ -75,10 +75,17 @@
 }
 
 .careers__detail {
-  width: 70vw;
   margin: auto;
-  margin-top: 6vmax;
-  margin-bottom: 6vmax;
+
+  @media @for-phone-only {
+    padding: 9vh 4vh 9vh 4vh;
+    margin: 0;
+  }
+  @media @for-tablet-portrait-up {
+    width: 70vw;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+  }
 }
 
 .careers__back-arrow {
