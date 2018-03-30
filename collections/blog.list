@@ -18,8 +18,8 @@
           <img {@|image-meta} />
         {.end}
       </div>
-      <p class="blog__category util__text-red util__text-uppercase">{categories.0}</p>
-      <h3 data-content-field="title">{title}</h3>
+      <p class="blog__category util__text-uppercase">{categories.0}</p>
+      <h3 class="util__text-red" data-content-field="title">{title}</h3>
       {excerpt}
     </a>
   

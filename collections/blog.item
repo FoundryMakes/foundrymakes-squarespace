@@ -1,25 +1,29 @@
 
 {.section item}
-  <article id="post-{id}" class="blog__detail {@|item-classes}" data-item-id="{id}">
-
-    {#  Post header  }
-    <p class="blog__detail-category util__text-red util__text-uppercase">{categories.0}</p>
-    <h1 class="blog__detail-title" data-content-field="title">{title}</h1>
-    
+  {#  Post header  }
+  <div class="content-fill blog__hero">
+    <div class="util__z-above-overlay">
+      <div class="blog__post-header">
+        <a class="blog__post-category util__text-white util__text-uppercase" href="{collection.fullUrl}?category={categories.0|url-encode}">{categories.0}</a>
+        <h1 class="blog__post-title util__text-white" data-content-field="title">{title}</h1>
+        <p class="blog__post-meta util__text-white">by <strong><a href="{collection.fullUrl}?author={author.id}">{author.displayName}</a></strong> <br> <time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></p>
+      </div>
+    </div>
     {.main-image?}
-      <img class="blog__detail-feature-image" {@|image-meta} />
+      <img {@|image-meta} />
     {.end}
+    <div class="util__overlay-blue"></div>
+  </div>
+  
+  <article id="post-{id}" class="blog__post {@|item-classes}" data-item-id="{id}">
 
     {#  Post content  }
-    <div class="blog__detail-content body-copy">
+    <div class="blog__post-content body-copy">
       {body}
     </div>
 
     {#  Injected code  }
     {postItemInjectCode}
-
-    {#  Post footer  }
-    <p class="blog__detail-meta">Posted by <a href="{collection.fullUrl}?author={author.id}">{author.displayName}</a> on <time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></p>
 
   </article>
 
