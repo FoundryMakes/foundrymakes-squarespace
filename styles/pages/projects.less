@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-end;
   
   @media @for-phone-only {
     flex-direction: column;
@@ -40,6 +41,12 @@
   
   @media @for-tablet-portrait-up {
     width: 25vw;
+  }
+
+  .projects__tile-text {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
   }
 
   span {

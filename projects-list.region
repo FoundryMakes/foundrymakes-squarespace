@@ -38,11 +38,13 @@
 
         {.repeated section collections}
 
-        <a class="projects__tile util__mt-5 scroll-reveal" href="{fullUrl}">
-          <img src="{mainImage.assetUrl}" alt="{navigationTitle}" />
-          <h3><strong>{navigationTitle}</strong> &mdash; {description}</h3>
-          <span>View Project</span>
-        </a>
+          <a class="projects__tile util__mt-5 scroll-reveal" href="{fullUrl}" data-item-id="{item.id}">
+            <img src="{mainImage.assetUrl}" alt="{navigationTitle}" />
+            <div class="projects__tile-text">
+              <h3><strong data-content-field="title">{navigationTitle}</strong> &mdash; {description}</h3>
+              <span>View Project</span>
+            </div>
+          </a>
 
         {.end}
       </div>
