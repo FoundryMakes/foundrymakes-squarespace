@@ -66,6 +66,10 @@
     transition: all .4s ease;
   }
 
+  .blog__category {
+    font-size: 80%;
+  }
+
   &:hover {
     &:active,
     &:visited {
@@ -156,8 +160,7 @@
   margin-bottom: 6vmax;
 
   img {
-    max-width: 80%;
-    max-height: 50vh;
+    width: 120%;
     align-self: center;
   }
 }
@@ -169,11 +172,12 @@
 
 .blog__detail-title {
   margin-top: 0;
-  margin-bottom: 5vw;
+  margin-bottom: 4vmax;
 }
 
 .blog__detail-feature-image {
-  margin-bottom: 4vw;
+    margin-top: 0;
+    margin-bottom: 4vmax;
 }
 
 .blog__detail-content {
@@ -191,9 +195,15 @@
       }
     }
   }
+
+  img {
+    margin-top: 6vmax;
+    margin-bottom: 6vmax;
+  }
 }
 
 .blog__detail-meta {
   font-size: 80%;
-  color: @lightgray;
+  color: @mediumgray;
+  margin-top:  2vw;
 }

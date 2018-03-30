@@ -18,7 +18,7 @@
           <img {@|image-meta} />
         {.end}
       </div>
-      <p>{categories.0}</p>
+      <p class="blog__category util__text-red util__text-uppercase">{categories.0}</p>
       <h3 data-content-field="title">{title}</h3>
       {excerpt}
     </a>
