@@ -32,7 +32,7 @@
 
   {#  Pagination  }
   {.if pagination}
-  <div class="pagination">
+  <nav class="pagination">
     <div>
       {.if pagination.prevPage}
       <a class="pagination__container" href="{pagination.prevPageUrl}">
@@ -59,6 +59,6 @@
       </a>
       {.end}
     </div>
-  </div>
+  </nav>
   {.end}
 </div>

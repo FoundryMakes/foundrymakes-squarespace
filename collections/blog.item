@@ -1,56 +1,25 @@
 
 {.section item}
+  <article id="post-{id}" class="blog__detail {@|item-classes}" data-item-id="{id}">
 
-  <!--WRAPPER-->
-  <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
+    {#  Post header  }
+    <p class="blog__detail-category util__text-red util__text-uppercase">{categories.0}</p>
+    <h1 class="blog__detail-title" data-content-field="title">{title}</h1>
+    
+    {.main-image?}
+      <img class="blog__detail-feature-image" {@|image-meta} />
+    {.end}
 
-    <!--POST TILE-->
-    <h1 class="title" data-content-field="title">
-      {.passthrough?}
-        <a href="{sourceUrl}" target="_blank">{title}</a>
-      {.or}
-        {title}
-      {.end}
-    </h1>
+    {#  Post content  }
+    <div class="blog__detail-content body-copy">
+      {body}
+    </div>
 
-    <!--AUTHOR AND DATE-->
-    <p class="meta">
-      <a href="{fullUrl}" class="permalink"><time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a> by <a href="{collection.fullUrl}?author={author.id}">{author.displayName}</a>
-    </p>
-
-    <!--MAIN CONTENT-->
-    {body}
-
-    <!--BLOG INJECTION-->
+    {#  Injected code  }
     {postItemInjectCode}
 
-    <!--CATEGORIES-->
-    {.repeated section categories}
-      <a class="category" href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with},
-    {.end}
-
-    <!--TAGS-->
-    {.repeated section tags}
-      <a class="tag" href="{collection.fullUrl}?tag={@|url-encode}">{@}</a>{.alternates with},
-    {.end}
-
-    <!--SHARE AND LIKE-->
-    {@|like-button}
-    {@|social-button}
-
-
-    <!--LOCATION-->
-    {.section location}
-      {.section addressTitle}
-        {addressTitle}
-        {addressLine1}
-        {addressLine2}
-        {addressCountry}
-      {.end}
-    {.end}
-
-    <!--COMMENTS-->
-    {@|comments}
+    {#  Post footer  }
+    <p class="blog__detail-meta">Posted by <a href="{collection.fullUrl}?author={author.id}">{author.displayName}</a> on <time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></p>
 
   </article>
 
@@ -59,21 +28,32 @@
 
 <!--PAGINATION-->
 {.section pagination}
-  <nav class="blog-item-pagination">
-
-    <!--NEWER PAGE-->
-    {.section prevItem}
-      <a href="{fullUrl}">Newer</a>
-    {.or}
-      <a class="disabled">Newer</a>
-    {.end}
-
-    <!--OLDER PAGE-->
-    {.section nextItem}
-      <a href="{fullUrl}">Older</a>
-    {.or}
-      <a class="disabled">Older</a>
-    {.end}
-
+  <nav class="pagination">
+    <div>
+      {.if pagination.prevPage}
+      <a class="pagination__container" href="{pagination.prevPageUrl}">
+        <div class="scroll-reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="pagination__left-arrow">
+            <title>Left Arrow</title>
+            <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
+          </svg>
+        </div>
+        <div class="pagination__text scroll-reveal">Newer</div>
+      </a>
+      {.end}
+    </div>
+    <div>
+      {.if pagination.nextPage}
+      <a style="justify-content:flex-end;" class="pagination__container scroll-reveal" href="{pagination.nextPageUrl}">
+        <div class="pagination__text scroll-reveal">Older</div>
+        <div class="scroll-reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="pagination__right-arrow">
+            <title>Right Arrow</title>
+            <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
+          </svg>
+        </div>
+      </a>
+      {.end}
+    </div>
   </nav>
 {.end}

@@ -30,6 +30,17 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   }
 }
 
+.body-copy {
+  /* 1.125x body copy size = 18px */
+  font-size: 1.125em;
+  line-height: 1.11111111;
+
+  @media @for-tablet-portrait-up {
+    /* (22px / 18px */
+    line-height: 1.22222222;
+  }
+}
+
 h1 {
   font-family: @bold-font, @generic-fonts;
   

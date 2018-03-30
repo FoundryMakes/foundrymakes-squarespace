@@ -144,3 +144,56 @@
   @media @for-tablet-portrait-up {height: 6vw;}
   @media @for-tablet-landscape-up {height: 2.5vw;}
 }
+
+/* Styles for the blog detail page
+***************************************************/
+.blog__detail {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  margin: auto;
+  margin-top: 6vmax;
+  margin-bottom: 6vmax;
+
+  img {
+    max-width: 80%;
+    max-height: 50vh;
+    align-self: center;
+  }
+}
+
+.blog__detail-category {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.blog__detail-title {
+  margin-top: 0;
+  margin-bottom: 5vw;
+}
+
+.blog__detail-feature-image {
+  margin-bottom: 4vw;
+}
+
+.blog__detail-content {
+  a {
+    color: @red;
+
+    &:hover {
+      &:active,
+      &:visited {
+        color: inherit;
+      }
+  
+      &:hover {
+        color: @blue;
+      }
+    }
+  }
+}
+
+.blog__detail-meta {
+  font-size: 80%;
+  color: @lightgray;
+}
