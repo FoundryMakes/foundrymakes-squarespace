@@ -6,12 +6,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
-  
+
   @media @for-phone-only {
     flex-direction: column;
     padding: 1vh 4vh 1vh 4vh;
   }
-  
+
   @media @for-tablet-portrait-up {
     padding: 1vw 9vw 8vw 9vw;
   }
@@ -32,12 +32,12 @@
 
 .blog__tile {
   display: block;
-  
+
   @media @for-phone-only {
-    width:100%;
+    width: 100%;
     margin-bottom: 9vh;
   }
-  
+
   @media @for-tablet-portrait-up {
     width: 25vw;
   }
@@ -48,22 +48,26 @@
     position: relative;
     overflow: hidden;
 
-    @media @for-phone-only {height: 30vh}
-    @media @for-tablet-portrait-up {height: 15vw}
+    @media @for-phone-only {
+      height: 30vh;
+    }
+    @media @for-tablet-portrait-up {
+      height: 15vw;
+    }
 
     img {
-      width:100%;
-      height:100%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       overflow: hidden;
     }
   }
 
-  p, 
+  p,
   h3 {
     margin: 0 0 15px 0 !important;
     text-align: center;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
   }
 
   .blog__category {
@@ -98,32 +102,36 @@
   margin-left: 0;
   padding-right: 0;
   padding-left: 0;
-  @media @for-phone-only {height: 100px;}
-	@media @for-tablet-portrait-up {height: 160px;}
+  @media @for-phone-only {
+    height: 100px;
+  }
+  @media @for-tablet-portrait-up {
+    height: 160px;
+  }
 }
 
 .pagination__container {
   position: relative;
-	display: flex;
+  display: flex;
   align-items: center;
   flex-flow: row;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 
-	path {
-		fill: @blue;
-	}
+  path {
+    fill: @blue;
+  }
 
-	&:hover {
+  &:hover {
     .pagination__text {
       color: @red;
-      transition: all .4s ease !important;
+      transition: all 0.4s ease !important;
     }
 
-		path {
+    path {
       fill: @red;
-      transition: all .4s ease;
-		}
-	}
+      transition: all 0.4s ease;
+    }
+  }
 }
 
 .pagination__text {
@@ -132,21 +140,39 @@
   padding: 0;
   margin-left: 15px;
   margin-right: 15px;
-  @media @for-phone-only {font-size: 4vw;}
-  @media @for-tablet-portrait-up {font-size: 4vw;}
-  @media @for-tablet-landscape-up {font-size: 2vw;}
+  @media @for-phone-only {
+    font-size: 4vw;
+  }
+  @media @for-tablet-portrait-up {
+    font-size: 4vw;
+  }
+  @media @for-tablet-landscape-up {
+    font-size: 2vw;
+  }
 }
 
 .pagination__left-arrow {
-  @media @for-phone-only {height: 6vw;}
-  @media @for-tablet-portrait-up {height: 6vw;}
-  @media @for-tablet-landscape-up {height: 2.5vw;}
+  @media @for-phone-only {
+    height: 6vw;
+  }
+  @media @for-tablet-portrait-up {
+    height: 6vw;
+  }
+  @media @for-tablet-landscape-up {
+    height: 2.5vw;
+  }
 }
 
 .pagination__right-arrow {
-  @media @for-phone-only {height: 6vw;}
-  @media @for-tablet-portrait-up {height: 6vw;}
-  @media @for-tablet-landscape-up {height: 2.5vw;}
+  @media @for-phone-only {
+    height: 6vw;
+  }
+  @media @for-tablet-portrait-up {
+    height: 6vw;
+  }
+  @media @for-tablet-landscape-up {
+    height: 2.5vw;
+  }
 }
 
 /* Styles for the blog detail page
@@ -154,14 +180,32 @@
 .blog__detail {
   display: flex;
   flex-direction: column;
-  width: 70vw;
   margin: auto;
-  margin-top: 6vmax;
-  margin-bottom: 6vmax;
+
+  @media @for-phone-only {
+    padding: 9vh 4vh 9vh 4vh;
+    margin: 0;
+  }
+  @media @for-tablet-portrait-up {
+    width: 70vw;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+  }
 
   img {
-    width: 120%;
     align-self: center;
+
+    @media @for-phone-only {
+      width: 100%;
+    }
+    @media @for-tablet-portrait-up {
+      width: 120%;
+    }
+  }
+
+  iframe {
+    display: block;
+    margin: auto;
   }
 }
 
@@ -176,8 +220,12 @@
 }
 
 .blog__detail-feature-image {
-    margin-top: 0;
-    margin-bottom: 4vmax;
+  margin-top: 0;
+  margin-bottom: 4vmax;
+
+  @media @for-phone-only {
+    width: 100vw !important;
+  }
 }
 
 .blog__detail-content {
@@ -189,7 +237,7 @@
       &:visited {
         color: inherit;
       }
-  
+
       &:hover {
         color: @blue;
       }
@@ -205,5 +253,5 @@
 .blog__detail-meta {
   font-size: 80%;
   color: @mediumgray;
-  margin-top:  2vw;
+  margin-top: 3vw;
 }
