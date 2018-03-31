@@ -115,18 +115,8 @@ h4 {
 /* Blockquotes
 ***************************************************/
 blockquote {
-  /* 1.125x body copy size = 18px */
-  font-size: 1.125em;
-  line-height: 1.11111111;
-
-  @media @for-tablet-portrait-up {
-    /* (22px / 18px */
-    line-height: 1.22222222;
-  }
-
   position: relative;
-  padding: 0 1.5em 1em 1.5em;
-  width: 95%;
+  padding: 0 1.5em 1em 1em;
 
   span {
     display: none;
@@ -136,15 +126,15 @@ blockquote {
 blockquote:before {
   content: "\201C";
   color: @red;
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: bold;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
 
 figcaption {
-  font-family: @light-font, @generic-fonts;
-  color: @red;
+  font-family: @medium-font, @generic-fonts;
   padding-right: 1.5em;
   width: 95%;
 }
