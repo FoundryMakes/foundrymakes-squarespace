@@ -81,19 +81,15 @@
 /* Project detail page
 ***************************************************/
 .project-content {
-    .image-block {
-      margin: 0;
-    }
 
-    .html-block {
-      width: 70vw;
-      margin: auto;
-      margin-top: 6vmax;
-      margin-bottom: 6vmax;
+  @media @for-phone-only {
+    padding: 6vw;
+  }
+  @media @for-tablet-portrait-up {
+    padding: 4vw;
+  }
 
-      h3 {
-        color: @red;
-        margin-bottom: 2vw;
-      }
-    }
+  .image-block {
+    margin: 0;
+  }
 }
