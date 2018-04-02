@@ -1,0 +1,21 @@
+{.section item}
+  {#  Post header  }
+  <div class="content-fill">
+    {.main-image?}
+      <img {@|image-meta} />
+    {.end}
+  </div>
+  
+  <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
+
+    {#  Post content  }
+    <div class="body-copy">
+      {body}
+    </div>
+
+    {#  Injected code  }
+    {postItemInjectCode}
+
+  </article>
+
+{.end}
