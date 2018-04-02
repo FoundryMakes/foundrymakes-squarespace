@@ -1,0 +1,32 @@
+{#  Hero image  }
+<div class="hero__image">
+  <div class="util__z-above-overlay text-container ">
+    <squarespace:block-field id="careers__hero-title" class="page__title util__text-white util__text-uppercase" columns="12" lock-layout="true"/>
+    <squarespace:block-field id="careers__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
+    <squarespace:block-field id="careers__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
+  </div>
+  <img src="/assets/images/foundry__pattern-large.svg">
+</div>
+
+<div class="careers__list">
+
+{.repeated section items}
+
+  <a href="{fullUrl}" class="careers__item" data-item-id="{item.id}">
+    <h2 data-content-field="title">{title}</h2>
+    <h3>{excerpt}</h3>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="careers__arrow">
+      <title>Right Arrow</title>
+      <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
+    </svg>
+  </a>
+
+  <hr class="rule__blue">
+
+{.or}
+
+  <h2 class="careers__none">We currently have no open positions. Check back later for open opportunities.</h2>
+
+{.end}
+
+</div>
