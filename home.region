@@ -42,7 +42,7 @@
 
       {#  Selected case studies  }
       <div class="projects scroll-reveal">
-        <squarespace:query collection="projects" featured="true" limit="3">
+        <squarespace:query collection="work" featured="true" limit="3">
 
             {.repeated section items}
               <a class="projects__tile" data-item-id="{id}" href="{fullUrl}">
