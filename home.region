@@ -41,7 +41,16 @@
       </div>
 
       {#  Selected case studies  }
-      <div class="projects scroll-reveal"></div>
+      <div class="projects scroll-reveal">
+        <squarespace:query collection="projects" featured="true" limit="3">
+
+            {.repeated section items}
+              <a class="projects__tile" data-item-id="" href="{fullUrl}">{.main-image?}<img {@|image-meta} />{.end}
+              <div class="projects__tile-text"><h3><strong data-content-field="title">{title}</strong> &mdash; {excerpt}</h3><span>View Project</span></div></a>
+            {.end}
+
+        </squarespace:query>
+      </div>
 
       {#  Call to action  }
       <div class="cta scroll-reveal">
@@ -65,7 +74,6 @@
   {#  Combo and minify scripts when not logged in  }
   <squarespace:script src="lib/headroom.min.js" combo="true" />
   <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
-  <squarespace:script src="homeProjectTiles.js" combo="true" />
   <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
   {#  Other Squarespace scripts, and footer code injection  }
