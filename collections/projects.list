@@ -1,15 +1,24 @@
+<div class="hero__image">
+  <div class="util__z-above-overlay text-container ">
+    <squarespace:block-field id="projects__hero-title" class="page__title util__text-white util__text-uppercase" columns="12" lock-layout="true"/>
+    <squarespace:block-field id="projects__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
+    <squarespace:block-field id="projects__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
+  </div>
+  <img src="/assets/images/hero__work.jpg">
+  <div class="util__overlay-blue"></div>
+</div>
+
 <div class="index-list clearfix projects" data-controller="IndexController" data-collection-id="{collection.id}">
+  
   {.repeated section items}
-  
-    <a id="post-{id}" class="scroll-reveal" href="{fullUrl}" data-item-id="{id}">
-      <div>
-        {.main-image?}
-          <img {@|image-meta} />
-        {.end}
+    <a class="projects__tile util__mt-5 scroll-reveal" data-item-id="{id}" href="{fullUrl}">
+      {.main-image?}<img {@|image-meta} />{.end}
+      <div class="projects__tile-text">
+        <h3><strong data-content-field="title">{title}</strong> &mdash; {excerpt}</h3>
+        <span>View Project</span>
       </div>
-      <h3 class="util__text-red" data-content-field="title">{title}</h3>
     </a>
-  
+
   {.or}
   
     {#  No items means no blog posts  }
