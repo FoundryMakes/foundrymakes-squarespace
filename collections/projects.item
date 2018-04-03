@@ -1,21 +1,50 @@
-{.section item}
-  {#  Post header  }
-  <div class="content-fill">
-    {.main-image?}
-      <img {@|image-meta} />
-    {.end}
-  </div>
-  
-  <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
-
-    {#  Post content  }
-    <div class="body-copy">
-      {body}
+<div class="projects__detail">
+  {.section item}
+    {#  Post header  }
+    <div class="projects__header">
+      <div>
+        <h1 class="projects__title">{title}</h1>
+        <h4 class="projects__category">
+          {.repeated section categories}
+            {@}{.alternates with},
+          {.end}
+        </h4>
+      </div>
+      <div>
+        <h3>{excerpt}</h3>
+      </div>
     </div>
+    
+    <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
 
-    {#  Injected code  }
-    {postItemInjectCode}
+      {#  Post content  }
+      <div class="projects__body">
+        {body}
+      </div>
 
-  </article>
+      {#  Injected code  }
+      {postItemInjectCode}
 
-{.end}
+    </article>
+
+  {.end}
+
+  <!--PAGINATION-->
+  {.section pagination}
+    <nav class="pagination">
+      <div>
+        {.if nextItem}
+        <a class="pagination__container" href="{nextItem.fullUrl}">
+          <div class="scroll-reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="pagination__left-arrow">
+              <title>Left Arrow</title>
+              <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
+            </svg>
+          </div>
+          <div class="pagination__text scroll-reveal">{nextItem.title}</div>
+        </a>
+        {.end}
+      </div>
+    </nav>
+  {.end}
+</div>
