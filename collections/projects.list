@@ -8,7 +8,7 @@
   <div class="util__overlay-blue"></div>
 </div>
 
-<div class="index-list clearfix projects scroll-reveal" data-controller="IndexController" data-collection-id="{collection.id}">
+<div class="index-list clearfix projects" data-controller="IndexController" data-collection-id="{collection.id}">
   
   {.repeated section items}
     <a class="projects__tile" data-item-id="{id}" href="{fullUrl}">
