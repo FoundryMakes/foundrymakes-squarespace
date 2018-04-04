@@ -11,7 +11,7 @@
 <div class="index-list clearfix projects" data-controller="IndexController" data-collection-id="{collection.id}">
   
   {.repeated section items}
-    <a class="projects__tile" data-item-id="{id}" href="{fullUrl}">
+    <a class="projects__tile" data-item-id="{id}" href="{fullUrl}" title="{title}">
       <div class="projects__tile-image">
         {.main-image?}<img {@|image-meta} />{.end}
       </div>

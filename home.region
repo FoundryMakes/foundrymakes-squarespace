@@ -45,7 +45,7 @@
         <squarespace:query collection="work" featured="true" limit="3">
 
             {.repeated section items}
-              <a class="projects__tile scroll-reveal" data-item-id="{id}" href="{fullUrl}">
+              <a class="projects__tile scroll-reveal" data-item-id="{id}" href="{fullUrl}" title="{title}">
                 <div class="projects__tile-image">
                   {.main-image?}<img {@|image-meta} />{.end}
                 </div>
@@ -67,7 +67,7 @@
           <title>Right Arrow</title>
           <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
         </svg>
-        <a href="/contact" class="util__background-link"></a>
+        <a href="/contact" class="util__background-link" title="Contact"></a>
       </div>
     </main>
 

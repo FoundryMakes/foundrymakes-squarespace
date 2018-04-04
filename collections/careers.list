@@ -12,7 +12,7 @@
 
 {.repeated section items}
 
-  <a href="{fullUrl}" class="careers__item" data-item-id="{item.id}">
+  <a href="{fullUrl}" class="careers__item" data-item-id="{item.id}" title="{title}">
     <h2 data-content-field="title">{title}</h2>
     <h3>{excerpt}</h3>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="careers__arrow">

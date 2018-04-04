@@ -28,7 +28,7 @@
   <!--PAGINATION-->
   {.section pagination}
     {.if nextItem}
-      <a href="{nextItem.fullUrl}">
+      <a href="{nextItem.fullUrl}" title="{nextItem.title}">
         <nav class="projects__pagination scroll-reveal">
           <strong>Next Project</strong>
           <h3>{nextItem.title}</h3>
