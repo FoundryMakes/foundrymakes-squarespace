@@ -1,13 +1,11 @@
-Base Template
+Foundry Squarespace Template
 ------------------------------
 
-The default template for developers getting started with a project on Squarespace. This is a minimal template. No tweaks, no web fonts, no static assets, no static pages, no system collections, no collection features, no modules at all.
-
-Just the basics.
+A more complete readme with instructions for how to run this locally is forthcoming.
 
 ### Usage
 
-See the [Developer Getting Started](https://developers.squarespace.com/getting-started) page for an step-by-step guide for getting started with the Squaresapce Developer Platform. You can create a new website using this template by visiting [base-template.squarespace.com](http://base-template.squarespace.com) and clicking the "Create a Site Like This" button. This template is also available on [GitHub](https://github.com/Squarespace/base-template).
+See the [Developer Getting Started](https://developers.squarespace.com/getting-started) page for an step-by-step guide for getting started with the Squaresapce Developer Platform.
 
 ### Squarespace Templates
 
@@ -31,10 +29,6 @@ Squarespace template files are organized using the following folder structure at
 - **scripts**: Javascript files — site.js
 - **styles**: stylesheet files — styles.css, styles.less
 - [**root**]: sitewide files — site.region, template.conf
-
-### Essential Files
-
-At the very minimum, your template needs a `.region` file and a `template.conf`.
 
 #### /site.region
 
