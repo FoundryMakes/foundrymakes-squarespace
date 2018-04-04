@@ -34,6 +34,7 @@
 
 .projects__tile {
   display: block;
+  margin-top: 3vw;
 
   @media @for-phone-only {
     width: 100%;
@@ -45,6 +46,27 @@
     max-width: 33%;
     box-sizing: border-box;
     padding: 0 1.5vw 3vw;
+  }
+
+  .projects__tile-image {
+    padding: 0;
+    margin: 0 0 15px 0;
+    position: relative;
+    overflow: hidden;
+
+    @media @for-phone-only {
+      height: 30vh;
+    }
+    @media @for-tablet-portrait-up {
+      height: 15vw;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
   }
 
   .projects__tile-text {
@@ -100,29 +122,11 @@
 }
 
 .projects__header {
-  display: flex;
-
   @media @for-phone-only {
-    flex-direction: column;
+    padding: 3vh 4vh 0 4vh;
   }
-
-  h1,
-  h3,
-  h4,
-  p {
-    margin: 0 0 1vw 0;
-  }
-
-  div {
-    @media @for-phone-only {
-      flex: 0 0 auto;
-      margin-bottom: 4vh;
-    }
-    @media @for-tablet-portrait-up {
-      flex: 1;
-      margin-bottom: 2vw;
-      padding-right: 3vw;
-    }
+  @media @for-tablet-portrait-up {
+    padding: 2vw 9vw 0 9vw;
   }
 }
 
@@ -159,5 +163,20 @@
       margin-left: auto;
       margin-right: auto;
     }
+  }
+}
+
+.projects__pagination {
+  display: block;
+  
+  @media @for-phone-only {
+    padding: 12vh 0;
+  }
+
+  @media @for-tablet-portrait-up {
+    padding: 12vw 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

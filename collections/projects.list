@@ -11,8 +11,10 @@
 <div class="index-list clearfix projects" data-controller="IndexController" data-collection-id="{collection.id}">
   
   {.repeated section items}
-    <a class="projects__tile util__mt-5 scroll-reveal" data-item-id="{id}" href="{fullUrl}">
-      {.main-image?}<img {@|image-meta} />{.end}
+    <a class="projects__tile scroll-reveal" data-item-id="{id}" href="{fullUrl}">
+      <div class="projects__tile-image">
+        {.main-image?}<img {@|image-meta} />{.end}
+      </div>
       <div class="projects__tile-text">
         <h3><strong data-content-field="title">{title}</strong> &mdash; {excerpt}</h3>
         <span>View Project</span>

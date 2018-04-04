@@ -46,7 +46,9 @@
 
             {.repeated section items}
               <a class="projects__tile" data-item-id="{id}" href="{fullUrl}">
-                {.main-image?}<img {@|image-meta} />{.end}
+                <div class="projects__tile-image">
+                  {.main-image?}<img {@|image-meta} />{.end}
+                </div>
                 <div class="projects__tile-text">
                   <h3><strong data-content-field="title">{title}</strong> &mdash; {excerpt}</h3>
                   <span>View Project</span>
