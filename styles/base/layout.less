@@ -6,7 +6,7 @@
   overflow-x: hidden;
 }
 
-/* Default container margins
+/* Content container
 ***************************************************/
 .content-container {
   @media @for-phone-only {
@@ -20,6 +20,20 @@
   @media @for-tablet-landscape-up {
     margin-left: 4vw;
     margin-right: 4vw;
+  }
+}
+
+/* Text container
+***************************************************/
+.text-container {
+  box-sizing: border-box;
+  z-index: @z-content;
+
+  @media @for-phone-only {
+    padding: 9vh 4vh 9vh 4vh;
+  }
+  @media @for-tablet-portrait-up {
+    padding: 8vw 9vw 8vw 9vw;
   }
 }
 
@@ -86,19 +100,6 @@
   }
 }
 
-/* Text container
-***************************************************/
-.text-container {
-  box-sizing: border-box;
-  z-index: @z-content;
-
-  @media @for-phone-only {
-    padding: 9vh 4vh 9vh 4vh;
-  }
-  @media @for-tablet-portrait-up {
-    padding: 8vw 9vw 8vw 9vw;
-  }
-}
 
 /* Hide elements to prevent scroll reveal flash
 ***************************************************/
