@@ -15,49 +15,50 @@
     <div class="util__overlay-blue"></div>
   </div>
   
-  <article id="post-{id}" class="blog__post {@|item-classes}" data-item-id="{id}">
+  <div class="blog__post">
+    <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
 
-    {#  Post content  }
-    <div class="blog__post-content body-copy">
-      {body}
-    </div>
+      {#  Post content  }
+      <div class="blog__post-content body-copy">
+        {body}
+      </div>
 
-    {#  Injected code  }
-    {postItemInjectCode}
+      {#  Injected code  }
+      {postItemInjectCode}
 
-  </article>
+    </article>
 
 {.end}
 
-
-<!--PAGINATION-->
-{.section pagination}
-  <nav class="pagination">
-    <div>
-      {.if pagination.prevPage}
-      <a class="pagination__container" href="{pagination.prevPageUrl}">
-        <div class="scroll-reveal">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="pagination__left-arrow">
-            <title>Left Arrow</title>
-            <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
-          </svg>
+    <!--PAGINATION-->
+    {.section pagination}
+      <nav class="blog__pagination">
+        <div>
+          {.if prevItem}
+          <a class="blog__pagination-container" href="{prevItem.fullUrl}" title="{prevItem.title}">
+            <div class="scroll-reveal">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="blog__pagination-left-arrow">
+                <title>Left Arrow</title>
+                <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
+              </svg>
+            </div>
+            <div class="blog__pagination-text scroll-reveal">Newer</div>
+          </a>
+          {.end}
         </div>
-        <div class="pagination__text scroll-reveal">Newer</div>
-      </a>
-      {.end}
-    </div>
-    <div>
-      {.if pagination.nextPage}
-      <a style="justify-content:flex-end;" class="pagination__container scroll-reveal" href="{pagination.nextPageUrl}">
-        <div class="pagination__text scroll-reveal">Older</div>
-        <div class="scroll-reveal">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="pagination__right-arrow">
-            <title>Right Arrow</title>
-            <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
-          </svg>
+        <div>
+          {.if nextItem}
+          <a style="justify-content:flex-end;" class="blog__pagination-container scroll-reveal" href="{nextItem.fullUrl}" title="{nextItem.title}">
+            <div class="blog__pagination-text scroll-reveal">Older</div>
+            <div class="scroll-reveal">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="blog__pagination-right-arrow">
+                <title>Right Arrow</title>
+                <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>
+              </svg>
+            </div>
+          </a>
+          {.end}
         </div>
-      </a>
-      {.end}
-    </div>
-  </nav>
-{.end}
+      </nav>
+    {.end}
+  </div>
