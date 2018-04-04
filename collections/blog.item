@@ -3,7 +3,7 @@
   {#  Post header  }
   <div class="content-fill blog__hero">
     <div class="util__z-above-overlay">
-      <div class="blog__post-header">
+      <div class="blog__post-header scroll-reveal">
         <a class="blog__post-category util__text-white util__text-uppercase" href="{collection.fullUrl}?category={categories.0|url-encode}">{categories.0}</a>
         <h1 class="blog__post-title util__text-white" data-content-field="title">{title}</h1>
         <p class="blog__post-meta util__text-white">by <strong><a href="{collection.fullUrl}?author={author.id}">{author.displayName}</a></strong> <br> <time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></p>

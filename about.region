@@ -33,7 +33,7 @@
       </div>
 
       {#  Team section  }
-      <div class="text-container scroll-reveal">
+      <div class="text-container">
         <squarespace:block-field id="about__team-header" class="util__text-red" columns="12" lock-layout="true"/>
         <squarespace:block-field id="about__team-description" columns="12" lock-layout="true"/>
       </div>
@@ -44,7 +44,7 @@
       </div>
 
       {#  Clients section  }
-      <div class="text-container scroll-reveal util__pb-0">
+      <div class="text-container util__pb-0">
         <squarespace:block-field id="about__partners-header" class="util__text-red" columns="12" lock-layout="true"/>
         <squarespace:block-field id="about__partners-description" columns="12" lock-layout="true"/>
       </div>
@@ -87,27 +87,27 @@
       </div>
 
       {#  Services section  }
-      <div class="text-container scroll-reveal util__bg-blue">
+      <div class="text-container util__bg-blue">
         <squarespace:block-field id="about__services-header" class="util__text-red" columns="12" lock-layout="true"/>
         <squarespace:block-field id="about__services-description" class="util__text-white" columns="12" lock-layout="true"/>
       </div>
 
       {#  Leadership section  }
-      <div class="text-container scroll-reveal">
+      <div class="text-container">
         <squarespace:block-field id="about__leadership-header" class="util__text-red" columns="12" lock-layout="true" />
         
         <div class="leadership-photos">
-          <div class="leadership-photos__tile">
+          <div class="leadership-photos__tile scroll-reveal">
             <img src="/assets/images/leadership__kurt.jpg" style="transform: rotate(7deg)" />
             <h3>Kurt Schmidt</h3>
             <h4>President</h4>
           </div>
-          <div class="leadership-photos__tile">
+          <div class="leadership-photos__tile scroll-reveal">
             <img src="/assets/images/leadership__nils.jpg" />
             <h3>Nils Hansen</h3>
             <h4>Principal, Creative</h4>
           </div>
-          <div class="leadership-photos__tile">
+          <div class="leadership-photos__tile scroll-reveal">
             <img src="/assets/images/leadership__robert.jpg" />
             <h3>Robert Nelson</h3>
             <h4>Principal, Technology</h4>

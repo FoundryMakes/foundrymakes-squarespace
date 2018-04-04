@@ -1,7 +1,7 @@
 <div class="projects__detail">
   {.section item}
     {#  Post header  }
-    <div class="projects__header">
+    <div class="projects__header scroll-reveal">
       <h1 class="projects__title">{title}</h1>
       <h4 class="projects__category">
         {.repeated section categories}

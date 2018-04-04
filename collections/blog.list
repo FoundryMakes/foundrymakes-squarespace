@@ -9,10 +9,10 @@
   <div class="util__overlay-blue"></div>
 </div>
 
-<div class="index-list clearfix blog" data-controller="IndexController" data-collection-id="{collection.id}">
+<div class="index-list clearfix blog scroll-reveal" data-controller="IndexController" data-collection-id="{collection.id}">
   {.repeated section items}
   
-    <a id="post-{id}" class="blog__tile util__mt-5 scroll-reveal" href="{fullUrl}" data-item-id="{id}">
+    <a id="post-{id}" class="blog__tile util__mt-5" href="{fullUrl}" data-item-id="{id}">
       <div class="blog__tile-image">
         {.main-image?}
           <img {@|image-meta} />

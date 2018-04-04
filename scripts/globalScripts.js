@@ -30,7 +30,7 @@
   var srConfig = {
     scale: 1,
     origin: 'bottom',
-    distance: '10px',
+    distance: '20px',
     reset: false,
     duration: 800,
     delay: 0

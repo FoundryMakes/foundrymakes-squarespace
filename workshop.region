@@ -101,7 +101,7 @@
       </div>
 
       {#  Deliverables section  }
-      <div class="text-container util__bg-blue scroll-reveal">
+      <div class="text-container util__bg-blue">
         <squarespace:block-field id="workshop__deliverables-header" class="util__text-red" columns="12" lock-layout="true"/>
         <squarespace:block-field id="workshop__deliverables-description" class="util__text-white" columns="12" lock-layout="true"/>
       </div>

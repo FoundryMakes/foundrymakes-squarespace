@@ -30,9 +30,15 @@
   position: relative;
   overflow: hidden;
 
-  @media @for-phone-only {height: 70vh}
-  @media @for-tablet-portrait-up {height: 50vw}
-  @media @for-tablet-landscape-up {height: 40vw}
+  @media @for-phone-only {
+    height: 70vh;
+  }
+  @media @for-tablet-portrait-up {
+    height: 50vw;
+  }
+  @media @for-tablet-landscape-up {
+    height: 40vw;
+  }
 
   video {
     padding: 0;
@@ -62,13 +68,19 @@
   position: relative;
   overflow: hidden;
 
-  @media @for-phone-only {height: 70vh}
-  @media @for-tablet-portrait-up {height: 50vw}
-  @media @for-tablet-landscape-up {height: 40vw}
+  @media @for-phone-only {
+    height: 70vh;
+  }
+  @media @for-tablet-portrait-up {
+    height: 50vw;
+  }
+  @media @for-tablet-landscape-up {
+    height: 40vw;
+  }
 
   img {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
   }
@@ -86,6 +98,13 @@
   @media @for-tablet-portrait-up {
     padding: 8vw 9vw 8vw 9vw;
   }
+}
+
+/* Hide elements to prevent scroll reveal flash
+***************************************************/
+.scroll-reveal,
+.sqs-block {
+  visibility: hidden;
 }
 
 /* Z-index variables

@@ -8,7 +8,7 @@
   <img src="/assets/images/foundry__pattern-large.svg">
 </div>
 
-<div class="careers__list">
+<div class="careers__list scroll-reveal">
 
 {.repeated section items}
 
