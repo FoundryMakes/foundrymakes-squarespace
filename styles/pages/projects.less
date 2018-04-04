@@ -4,7 +4,6 @@
 .projects {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-end;
 
@@ -15,6 +14,8 @@
 
   @media @for-tablet-portrait-up {
     padding: 1vw 9vw 8vw 9vw;
+    margin-left: -1.5vw;
+    margin-right: -1.5vw;
   }
 
   a {
@@ -40,7 +41,10 @@
   }
 
   @media @for-tablet-portrait-up {
-    width: 25vw;
+    flex: 1 0 33%;
+    max-width: 33%;
+    box-sizing: border-box;
+    padding: 0 1.5vw 3vw;
   }
 
   .projects__tile-text {
@@ -61,7 +65,7 @@
 
   p {
     display: inline;
-    font-size: 80%;
+    font-size: 75%;
   }
 
   &:hover {
