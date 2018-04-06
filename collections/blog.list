@@ -36,21 +36,21 @@
     <div>
       {.if pagination.prevPage}
       <a class="pagination__container" href="{pagination.prevPageUrl}">
-        <div class="scroll-reveal">
+        <div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="pagination__left-arrow">
             <title>Left Arrow</title>
             <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
           </svg>
         </div>
-        <div class="pagination__text scroll-reveal">Newer</div>
+        <div class="pagination__text">Newer</div>
       </a>
       {.end}
     </div>
     <div>
       {.if pagination.nextPage}
-      <a style="justify-content:flex-end;" class="pagination__container scroll-reveal" href="{pagination.nextPageUrl}">
-        <div class="pagination__text scroll-reveal">Older</div>
-        <div class="scroll-reveal">
+      <a style="justify-content:flex-end;" class="pagination__container" href="{pagination.nextPageUrl}">
+        <div class="pagination__text">Older</div>
+        <div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="pagination__right-arrow">
             <title>Right Arrow</title>
             <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>

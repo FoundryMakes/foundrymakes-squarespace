@@ -1,7 +1,7 @@
 <div class="projects__detail">
   {.section item}
     {#  Post header  }
-    <div class="projects__header scroll-reveal">
+    <div class="projects__header">
       <h1 class="projects__title">{title}</h1>
       <h4 class="projects__category">
         {.repeated section categories}
@@ -29,7 +29,7 @@
   {.section pagination}
     {.if nextItem}
       <a href="{nextItem.fullUrl}" title="{nextItem.title}">
-        <nav class="projects__pagination scroll-reveal">
+        <nav class="projects__pagination">
           <strong>Next Project</strong>
           <h3>{nextItem.title}</h3>
           {nextItem.excerpt}

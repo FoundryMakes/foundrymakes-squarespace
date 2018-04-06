@@ -3,7 +3,7 @@
   {#  Post header  }
   <div class="content-fill blog__hero">
     <div class="util__z-above-overlay">
-      <div class="blog__post-header scroll-reveal">
+      <div class="blog__post-header">
         <a class="blog__post-category util__text-white util__text-uppercase" href="{collection.fullUrl}?category={categories.0|url-encode}">{categories.0}</a>
         <h1 class="blog__post-title util__text-white" data-content-field="title">{title}</h1>
         <img class="blog__post-avatar" src="{author.avatarUrl}" alt="{author.displayName}" />
@@ -37,21 +37,21 @@
         <div>
           {.if prevItem}
           <a class="blog__pagination-container" href="{prevItem.fullUrl}" title="{prevItem.title}">
-            <div class="scroll-reveal">
+            <div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="blog__pagination-left-arrow">
                 <title>Left Arrow</title>
                 <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
               </svg>
             </div>
-            <div class="blog__pagination-text scroll-reveal">Newer</div>
+            <div class="blog__pagination-text">Newer</div>
           </a>
           {.end}
         </div>
         <div>
           {.if nextItem}
-          <a style="justify-content:flex-end;" class="blog__pagination-container scroll-reveal" href="{nextItem.fullUrl}" title="{nextItem.title}">
-            <div class="blog__pagination-text scroll-reveal">Older</div>
-            <div class="scroll-reveal">
+          <a style="justify-content:flex-end;" class="blog__pagination-container" href="{nextItem.fullUrl}" title="{nextItem.title}">
+            <div class="blog__pagination-text">Older</div>
+            <div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="blog__pagination-right-arrow">
                 <title>Right Arrow</title>
                 <path fill="#000" d="M1.46 0L0 1.46l14.25 14.25L0 29.96l1.46 1.45 15.7-15.7L1.46 0z" class="arrow"></path>

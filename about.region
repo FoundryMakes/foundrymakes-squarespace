@@ -116,7 +116,7 @@
       </div>
 
       {#  Call to action  }
-      <div class="cta scroll-reveal">
+      <div class="cta">
         <squarespace:block-field id="about__cta-header" class="util__text-red" columns="12" lock-layout="true"/>
         <squarespace:block-field id="about__cta-description" columns="12" lock-layout="true"/>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="cta__arrow">
@@ -137,6 +137,7 @@
   {#  Combo and minify scripts when not logged in  }
   <squarespace:script src="lib/headroom.min.js" combo="true" />
   <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
+  <squarespace:script src="scrollRevealElements.js" combo="true" />
   <squarespace:script src="clientsCarousel.js" combo="true" />
   <squarespace:script src="teamPhotos.js" combo="true" />
   <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />

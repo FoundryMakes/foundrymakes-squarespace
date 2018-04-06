@@ -32,6 +32,7 @@
     {#  Combo and minify scripts when not logged in  }
     <squarespace:script src="lib/headroom.min.js" combo="true" />
     <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
+    <squarespace:script src="scrollRevealElements.js" combo="true" />
     <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     {#  Other Squarespace scripts, and footer code injection  }
