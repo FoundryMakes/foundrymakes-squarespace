@@ -3,11 +3,6 @@
     {#  Post header  }
     <div class="projects__header">
       <h1 class="projects__title">{title}</h1>
-      <h4 class="projects__category">
-        {.repeated section categories}
-          <a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with},
-        {.end}
-      </h4>
       <h3>{excerpt}</h3>
     </div>
     
