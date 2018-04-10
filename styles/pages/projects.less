@@ -54,13 +54,6 @@
     position: relative;
     overflow: hidden;
 
-    @media @for-phone-only {
-      height: 30vh;
-    }
-    @media @for-tablet-portrait-up {
-      height: 15vw;
-    }
-
     img {
       width: 100%;
       height: 100%;
@@ -122,11 +115,8 @@
 }
 
 .projects__header {
-  @media @for-phone-only {
-    padding: 3vh 4vh 0 4vh;
-  }
   @media @for-tablet-portrait-up {
-    padding: 2vw 9vw 0 9vw;
+    padding: 0 9vw;
   }
 }
 
@@ -137,10 +127,13 @@
   }
 
   p {
-    font-size: 1.25em;
-    line-height: 1.25em;
+    /* 1.125x body copy size = 18px */
+    font-size: 1.125em;
+    line-height: 1.25;
+
     @media @for-tablet-portrait-up {
-      line-height: 1.5em;
+      /* (22px / 18px */
+      line-height: 1.375;
     }
   }
 
@@ -148,6 +141,10 @@
     padding-left: 1vw;
     padding-top: 0 !important;
     color: @mediumgray;
+
+    p {
+      font-size: 0.95em;
+    }
   }
 
   .image-block {
