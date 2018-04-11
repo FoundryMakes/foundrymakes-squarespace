@@ -25,10 +25,9 @@
     {.if nextItem}
       <a href="{nextItem.fullUrl}" title="{nextItem.title}">
         <nav class="projects__pagination">
-          <strong>Next Project</strong>
+          <strong class="util__text-uppercase">Next Project</strong>
           <h3>{nextItem.title}</h3>
           {nextItem.excerpt}
-          </div>
         </nav>
       </a>
     {.end}
