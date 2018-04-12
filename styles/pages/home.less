@@ -1,0 +1,114 @@
+/* Carousel of client icons on homepage
+***************************************************/
+.clients-carousel {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100vw;
+
+  @media @for-phone-only {
+    height: 30vw;
+    margin-bottom: 3vh;
+  }
+  @media @for-tablet-portrait-up {
+    height: 15vw;
+    margin-bottom: 3vw;
+  }
+}
+
+.clients-carousel__row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row;
+  width:100%;
+  height: 100%;
+}
+
+.clients-carousel__tile {
+  flex: 1 0 33.3333334%;
+  width: 33.3333334%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-carousel__logo {
+  filter: grayscale(1);
+  @media @for-phone-only {
+    max-width: 50%;
+    max-height: 60%;
+  }
+  @media @for-tablet-portrait-up {
+    max-width: 50%;
+    max-height: 40%;
+  }
+}
+
+.clients-carousel__active {
+  opacity: 1;
+}
+
+.clients-carousel__row-inactive {
+  opacity: 0;
+}
+
+.clients-carousel__row-fade-in {
+  animation: fade-in-fwd 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.clients-carousel__row-fade-out {
+  animation: fade-out-bck 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* Fade in animation for clients carousel
+***************************************************/
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+/* Fade out animation for clients carousel
+***************************************************/
+@-webkit-keyframes fade-out-bck {
+  0% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+}
+@keyframes fade-out-bck {
+  0% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+}
