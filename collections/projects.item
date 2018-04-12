@@ -20,7 +20,7 @@
 
   {.end}
 
-  <!--PAGINATION-->
+  {#  Pagination  }
   {.section pagination}
     {.if nextItem}
       <a href="{nextItem.fullUrl}" title="{nextItem.title}">
