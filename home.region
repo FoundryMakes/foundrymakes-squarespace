@@ -35,13 +35,13 @@
       </div>
 
       {#  Services  }
-      <div class="text-container">
+      <div class="text-container util__pb-0">
         <squarespace:block-field id="home__services-header" class="util__text-red" columns="12" lock-layout="true"/>
         <squarespace:block-field id="home__services-description" columns="12" lock-layout="true"/>
       </div>
 
       {#  Selected case studies  }
-      <div class="projects">
+      <div class="projects util__pb-0">
         <squarespace:query collection="work" featured="true" limit="3">
 
             {.repeated section items}
@@ -60,7 +60,7 @@
       </div>
 
       {#  Clients section  }
-      <div class="text-container">
+      <div class="text-container util__pb-0">
         <squarespace:block-field id="home__partners-header" class="util__text-red" columns="12" lock-layout="true"/>
       </div>
 
