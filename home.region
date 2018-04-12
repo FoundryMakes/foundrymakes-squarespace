@@ -59,6 +59,48 @@
         </squarespace:query>
       </div>
 
+      {#  Clients section  }
+      <div class="text-container">
+        <squarespace:block-field id="home__partners-header" class="util__text-red" columns="12" lock-layout="true"/>
+      </div>
+
+      {#  Client logos carousel  }
+      <div class="clients-carousel">
+        <div class="clients-carousel__row">
+          <div class="clients-carousel__tile">
+            <img class="clients-carousel__logo" src="/assets/clients/logo__cl.jpeg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img class="clients-carousel__logo" src="/assets/clients/logo__parade-of-homes-text.svg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img class="clients-carousel__logo" src="/assets/clients/logo__coco.svg">
+          </div>
+        </div>
+        <div class="clients-carousel__row clients-carousel__row-inactive">
+          <div class="clients-carousel__tile">
+            <img class="clients-carousel__logo" src="/assets/clients/logo__conservis-h.svg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img class="clients-carousel__logo" src="/assets/clients/logo__baird.svg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img class="clients-carousel__logo" src="/assets/clients/logo__welsh.svg">
+          </div>
+        </div>
+        <div class="clients-carousel__row clients-carousel__row-inactive">
+          <div class="clients-carousel__tile">
+            <img class="clients-carousel__logo" src="/assets/clients/logo__mindset-h.svg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img class="clients-carousel__logo" src="/assets/clients/logo__petopio.svg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img class="clients-carousel__logo" src="/assets/clients/logo__400-doors.svg">
+          </div>
+        </div>
+      </div>
+
       {#  Call to action  }
       <div class="cta">
         <squarespace:block-field id="home__cta-header" class="util__text-red" columns="12" lock-layout="true"/>
@@ -80,6 +122,7 @@
 
   {#  Combo and minify scripts when not logged in  }
   <squarespace:script src="lib/headroom.min.js" combo="true" />
+  <squarespace:script src="clientsCarousel.js" combo="true" />
   <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
   {#  Other Squarespace scripts, and footer code injection  }

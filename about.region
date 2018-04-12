@@ -43,53 +43,10 @@
         <div class="hidden-images"></div>
       </div>
 
-      {#  Clients section  }
-      <div class="text-container util__pb-0">
-        <squarespace:block-field id="about__partners-header" class="util__text-red" columns="12" lock-layout="true"/>
-        <squarespace:block-field id="about__partners-description" columns="12" lock-layout="true"/>
-      </div>
-
-      {#  Client logos carousel  }
-      <div class="clients-carousel scroll-reveal">
-        <div class="clients-carousel__row">
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__cl.jpeg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__parade-of-homes-text.svg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__coco.svg">
-          </div>
-        </div>
-        <div class="clients-carousel__row clients-carousel__row-inactive">
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__conservis-h.svg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__baird.svg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__welsh.svg">
-          </div>
-        </div>
-        <div class="clients-carousel__row clients-carousel__row-inactive">
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__mindset-h.svg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__petopio.svg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__400-doors.svg">
-          </div>
-        </div>
-      </div>
-
       {#  Services section  }
-      <div class="text-container util__bg-blue">
+      <div class="text-container">
         <squarespace:block-field id="about__services-header" class="util__text-red" columns="12" lock-layout="true"/>
-        <squarespace:block-field id="about__services-description" class="util__text-white" columns="12" lock-layout="true"/>
+        <squarespace:block-field id="about__services-description" columns="12" lock-layout="true"/>
       </div>
 
       {#  Leadership section  }
@@ -138,7 +95,6 @@
   <squarespace:script src="lib/headroom.min.js" combo="true" />
   <squarespace:script src="lib/scrollreveal.min.js" combo="true" />
   <squarespace:script src="scrollRevealElements.js" combo="true" />
-  <squarespace:script src="clientsCarousel.js" combo="true" />
   <squarespace:script src="teamPhotos.js" combo="true" />
   <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
