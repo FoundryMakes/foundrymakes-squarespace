@@ -44,7 +44,7 @@
       </div>
 
       {#  Services section  }
-      <div class="text-container">
+      <div class="text-container util__pb-5">
         <squarespace:block-field id="about__services-header" class="util__text-red" columns="12" lock-layout="true"/>
         <squarespace:block-field id="about__services-description" lock-layout="true"/>
         <div class="services">
@@ -61,24 +61,24 @@
       </div>
 
       {#  Leadership section  }
-      <div class="text-container">
+      <div class="text-container util__pb-5">
         <squarespace:block-field id="about__leadership-header" class="util__text-red" columns="12" lock-layout="true" />
         
         <div class="leadership-photos">
           <div class="leadership-photos__tile scroll-reveal">
             <img src="/assets/images/leadership__kurt.jpg" style="transform: rotate(7deg)" />
-            <h3>Kurt Schmidt</h3>
-            <h4>President</h4>
+            <h2><strong>Kurt Schmidt</strong></h2>
+            <h3>President</h3>
           </div>
           <div class="leadership-photos__tile scroll-reveal">
             <img src="/assets/images/leadership__nils.jpg" />
-            <h3>Nils Hansen</h3>
-            <h4>Principal, Creative</h4>
+            <h2><strong>Nils Hansen</strong></h2>
+            <h3>Principal, Creative</h3>
           </div>
           <div class="leadership-photos__tile scroll-reveal">
             <img src="/assets/images/leadership__robert.jpg" />
-            <h3>Robert Nelson</h3>
-            <h4>Principal, Technology</h4>
+            <h2><strong>Robert Nelson</strong></h2>
+            <h3>Principal, Technology</h3>
           </div>
         </div>
       </div>
