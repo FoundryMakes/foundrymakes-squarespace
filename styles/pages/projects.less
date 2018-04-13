@@ -188,3 +188,39 @@
     color: @blue !important;
   }
 }
+
+/* Project slideshow
+***************************************************/
+.project-slideshow {
+  position: relative;
+  height: 100vh;
+  margin-top: 4vw;
+  margin-bottom: 6vw;
+
+  @media @for-phone-only {
+    height: 66vw;
+    margin-bottom: 0;
+  }
+}
+
+.project-slide {
+  opacity:0; 
+  animation-name: fade; 
+  animation-duration: 9s; 
+  animation-iteration-count: infinite; 
+  position:absolute; 
+  left:0; 
+  right:0; 
+}
+
+.project-slide:nth-child(1) { animation-delay: 0s; }
+.project-slide:nth-child(2) { animation-delay: 3s; }
+.project-slide:nth-child(3) { animation-delay: 6s; }
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  100% { opacity: 0; }
+}
