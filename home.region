@@ -42,7 +42,7 @@
 
       {#  Selected case studies  }
       <div class="projects util__pb-0">
-        <squarespace:query collection="work" featured="true" limit="3">
+        <squarespace:query collection="work" featured="true" limit="2">
 
             {.repeated section items}
               <a class="projects__tile" data-item-id="{id}" href="{fullUrl}" title="{title}">
@@ -77,7 +77,7 @@
             <img class="clients-carousel__logo" src="/assets/clients/logo__coco.svg">
           </div>
         </div>
-        <div class="clients-carousel__row clients-carousel__row-inactive">
+        <div class="clients-carousel__row">
           <div class="clients-carousel__tile">
             <img class="clients-carousel__logo" src="/assets/clients/logo__conservis-h.svg">
           </div>
@@ -88,7 +88,7 @@
             <img class="clients-carousel__logo" src="/assets/clients/logo__welsh.svg">
           </div>
         </div>
-        <div class="clients-carousel__row clients-carousel__row-inactive">
+        <div class="clients-carousel__row">
           <div class="clients-carousel__tile">
             <img class="clients-carousel__logo" src="/assets/clients/logo__mindset-h.svg">
           </div>
@@ -122,7 +122,6 @@
 
   {#  Combo and minify scripts when not logged in  }
   <squarespace:script src="lib/headroom.min.js" combo="true" />
-  <squarespace:script src="clientsCarousel.js" combo="true" />
   <squarespace:script src="globalScripts.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
   {#  Other Squarespace scripts, and footer code injection  }
