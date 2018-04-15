@@ -22,13 +22,17 @@
     <main role="main" data-content-field="main-content">
 
       {#  Hero image  }
-      <div class="hero__image">
+      <div class="hero__image content-fill">
         <div class="util__z-above-overlay text-container ">
           <squarespace:block-field id="about__hero-title" class="page__title util__text-white util__text-uppercase" columns="12" lock-layout="true"/>
           <squarespace:block-field id="about__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
           <squarespace:block-field id="about__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
         </div>
-        <img src="/assets/images/hero__about.jpg">
+        {.section collection}
+          {.section mainImage}
+            <img {@|image-meta} />
+          {.end}
+        {.end}
         <div class="util__overlay-blue"></div>
       </div>
 
