@@ -68,35 +68,35 @@
       <div class="clients-carousel">
         <div class="clients-carousel__row">
           <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__cl.jpeg">
+            <img src="/assets/clients/logo__cl.jpeg">
           </div>
           <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__parade-of-homes-text.svg">
+            <img src="/assets/clients/logo__parade-of-homes-text.svg">
           </div>
           <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__coco.svg">
-          </div>
-        </div>
-        <div class="clients-carousel__row">
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__conservis-h.svg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__baird.svg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__welsh.svg">
+            <img src="/assets/clients/logo__coco.svg">
           </div>
         </div>
         <div class="clients-carousel__row">
           <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__mindset-h.svg">
+            <img src="/assets/clients/logo__conservis-h.svg">
           </div>
           <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__petopio.svg">
+            <img src="/assets/clients/logo__baird.svg">
           </div>
           <div class="clients-carousel__tile">
-            <img class="clients-carousel__logo" src="/assets/clients/logo__400-doors.svg">
+            <img src="/assets/clients/logo__welsh.svg">
+          </div>
+        </div>
+        <div class="clients-carousel__row">
+          <div class="clients-carousel__tile">
+            <img src="/assets/clients/logo__mindset-h.svg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img src="/assets/clients/logo__petopio.svg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img src="/assets/clients/logo__400-doors.svg">
           </div>
         </div>
       </div>
