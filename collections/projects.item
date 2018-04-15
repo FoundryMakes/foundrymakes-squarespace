@@ -30,6 +30,18 @@
           {nextItem.excerpt}
         </nav>
       </a>
+    {.or}
+      <squarespace:query collection="work" limit="1">
+        {.repeated section items}
+          <a href="{fullUrl}" title="{title}">
+            <nav class="projects__pagination">
+              <strong class="util__text-uppercase">Next Project</strong>
+              <h3>{title}</h3>
+              {excerpt}
+            </nav>
+          </a>
+          {.end}
+      </squarespace:query>
     {.end}
   {.end}
 </div>
