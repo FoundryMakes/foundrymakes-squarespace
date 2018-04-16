@@ -10,7 +10,7 @@ var srConfig = {
   reset: false,
   duration: 800,
   delay: 0
-}
+};
 
 sr.reveal('.scroll-reveal', srConfig);
 sr.reveal('.image-block', srConfig);
