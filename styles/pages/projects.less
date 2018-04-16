@@ -161,13 +161,44 @@
     margin-right: auto;
 
     .video-block {
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
     }
-
+    
     .mobile-video-block {
-      video {
-        max-height: 95vh;
+      position: relative;
+
+      @media @for-phone-only {
+        width: 290px;
+        height: 580px;
       }
+      @media @for-tablet-portrait-up {
+        width: 375px;
+        height: 750px;
+      }
+      @media @for-desktop-up {
+        width: 390px;
+        height: 780px;
+      }
+      
+      video {
+        width: 92.5925926%;
+        padding-top: 17.5308642%;
+      }
+    }
+
+    .mobile-video-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url('/assets/images/phone-frame.svg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: @z-overlay;
     }
   }
 }
