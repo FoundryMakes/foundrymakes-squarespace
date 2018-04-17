@@ -227,12 +227,24 @@
 ***************************************************/
 .project-slideshow {
   position: relative;
-  height: 100vh;
   margin-top: 4vw;
-  margin-bottom: 6vw;
 
   @media @for-phone-only {
     height: 66vw;
+    margin-bottom: 0;
+  }
+
+  @media @for-tablet-portrait-up {
+    height: 66vw;
+    margin-bottom: 0;
+  }
+
+  @media @for-tablet-landscape-up {
+    height: 100vh;
+    margin-bottom: 6vw;
+  }
+
+  @media @for-big-desktop-up {
     margin-bottom: 0;
   }
 }
@@ -243,8 +255,11 @@
   animation-duration: 9s; 
   animation-iteration-count: infinite; 
   position:absolute; 
-  left:0; 
   top:0; 
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .project-slide:nth-child(1) { animation-delay: 0s; }
