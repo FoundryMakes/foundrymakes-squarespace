@@ -5,7 +5,11 @@
     <squarespace:block-field id="careers__hero-header" class="util__text-red" columns="12" lock-layout="true"/>
     <squarespace:block-field id="careers__hero-description" class="util__text-white" columns="12" lock-layout="true"/>
   </div>
-  <img src="/assets/images/foundry__pattern-large.svg">
+  {.section collection}
+    {.section mainImage}
+      <img {@|image-meta} />
+    {.end}
+  {.end}
 </div>
 
 <div class="careers__list">
