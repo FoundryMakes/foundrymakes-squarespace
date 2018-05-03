@@ -16,6 +16,27 @@
   border-top: 1px solid @blue;
 }
 
+.contact__location {
+  display: flex;
+  justify-content: space-between;
+
+  .contact__address {
+    width: 50%;
+  }
+
+  @media @for-phone-only {
+    flex-direction: column;
+
+    .contact__address {
+      width: 100%;
+
+      &:nth-child(1) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
 #map {
   .marker {
     background-image: url('/assets/images/foundry__pin.svg');

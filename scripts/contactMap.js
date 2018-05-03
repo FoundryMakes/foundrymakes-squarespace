@@ -10,7 +10,10 @@ var map = new mapboxgl.Map({
   center: start,
   zoom: 12,
   pitch: 75,
-  scrollZoom: false
+  scrollZoom: false,
+  doubleClickZoom: false,
+  touchZoom: false,
+  dragging: false
 });
 
 map.on('load', function() {
