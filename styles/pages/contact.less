@@ -21,10 +21,14 @@
   justify-content: space-between;
 
   .contact__address {
-    width: 50%;
+    width: 45%;
+
+    &:nth-child(2) {
+      justify-self: flex-end;
+    }
   }
 
-  @media @for-phone-only {
+  @media @for-tablet-portrait-down {
     flex-direction: column;
 
     .contact__address {
