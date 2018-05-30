@@ -39,7 +39,7 @@
 
       {#  Map  }
       <div class="hero__image">
-        <div id="map" style="height: 100%; width: 100%"></div>
+        <div id="map" style="height: 100%; width: 100%; position: absolute; top: 0; bottom: 0"></div>
       </div>
     </main>
 
