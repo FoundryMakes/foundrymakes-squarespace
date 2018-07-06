@@ -4,7 +4,6 @@
   "description": "a Squarespace template for Foundry",
   "main": "site.region",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "bs": "browser-sync start --proxy 'http://localhost:9000' --reload-delay 2000 --no-open --files 'collections' 'blocks' 'assets' 'scripts' 'styles' '*.region'",
     "dev": "parallelshell 'squarespace-server https://foundrymakes-ss.squarespace.com --auth' 'npm run bs'"
   },
