@@ -181,8 +181,8 @@ b {
 }
 
 code {
-  background-color: @blue;
-  color: @white;
+  background-color: @lightestgray;
+  color: @blue;
   padding: 4px 8px;
   border-radius: 4px;
 }
@@ -193,8 +193,8 @@ pre {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
-  background-color: @blue;
-  color: @white;
+  background-color: @lightestgray;
+  color: #597A8C;
   padding: 24px;
   border-radius: 8px;
   line-height: 2em;
@@ -203,5 +203,21 @@ pre {
   code {
     background-color: transparent;
     padding: 0;
-  }  
+  }
+
+  .cm-tag {
+    color: @blue;
+  }
+
+  .cm-attribute {
+    color: @lightblue;
+  }
+
+  .cm-string {
+    color: @red;
+  }
+
+  .cm-bracket, .cm-atom {
+    color: @slate;
+  }
 }
