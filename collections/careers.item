@@ -1,3 +1,8 @@
+{#  Diversity badge  }
+<a href="https://mntechdiversity.com/work/foundry/" target="_blank">
+  <div class="diversitybadge"></div>
+</a>
+
 <div class="careers__detail">
   <a href="/careers" class="careers__back-arrow" title="Back to Careers">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41">

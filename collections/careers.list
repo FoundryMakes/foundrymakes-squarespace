@@ -1,3 +1,8 @@
+{#  Diversity badge  }
+<a href="https://mntechdiversity.com/work/foundry/" target="_blank">
+  <div class="diversitybadge"></div>
+</a>
+
 {#  Hero image  }
 <div class="hero__image">
   <div class="util__z-above-overlay text-container ">
