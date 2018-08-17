@@ -34,7 +34,7 @@
     <!--PAGINATION-->
     {.section pagination}
       <nav class="blog__pagination">
-        <div>
+        <div class="blog__pagination-direction">
           {.if prevItem}
           <a class="blog__pagination-container" href="{prevItem.fullUrl}" title="{prevItem.title}">
             <div>
@@ -47,7 +47,7 @@
           </a>
           {.end}
         </div>
-        <div>
+        <div class="blog__pagination-direction">
           {.if nextItem}
           <a style="justify-content:flex-end;" class="blog__pagination-container" href="{nextItem.fullUrl}" title="{nextItem.title}">
             <div class="blog__pagination-text">{nextItem.title}</div>
