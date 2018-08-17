@@ -43,14 +43,14 @@
                 <path fill="#000" d="M17.16 1.46L15.71 0 0 15.71l15.71 15.7 1.45-1.45L2.91 15.71 17.16 1.46z" class="arrow"></path>
               </svg>
             </div>
-            <div class="blog__pagination-text">Newer</div>
+            <div class="blog__pagination-text">{prevItem.title}</div>
           </a>
           {.end}
         </div>
         <div>
           {.if nextItem}
           <a style="justify-content:flex-end;" class="blog__pagination-container" href="{nextItem.fullUrl}" title="{nextItem.title}">
-            <div class="blog__pagination-text">Older</div>
+            <div class="blog__pagination-text">{nextItem.title}</div>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.16 31.41" class="blog__pagination-right-arrow">
                 <title>Right Arrow</title>
