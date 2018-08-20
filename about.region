@@ -52,15 +52,9 @@
         <squarespace:block-field id="about__services-header" class="util__text-red" columns="12" lock-layout="true"/>
         <squarespace:block-field id="about__services-description" lock-layout="true"/>
         <div class="services">
-          <div>
-            <squarespace:block-field id="about__services-description-1" lock-layout="true"/>
-          </div>
-          <div>
-            <squarespace:block-field id="about__services-description-2" lock-layout="true"/>
-          </div>
-          <div>
-            <squarespace:block-field id="about__services-description-3" lock-layout="true"/>
-          </div>
+          <squarespace:block-field id="about__services-description-1" lock-layout="true" columns="1"/>
+          <squarespace:block-field id="about__services-description-2" lock-layout="true" columns="1"/>
+          <squarespace:block-field id="about__services-description-3" lock-layout="true" columns="1"/>
         </div>
       </div>
 
