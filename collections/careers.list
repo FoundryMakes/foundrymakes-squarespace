@@ -1,7 +1,5 @@
 {#  Diversity badge  }
-<a href="https://mntechdiversity.com/work/foundry/" target="_blank">
-  <div class="diversitybadge"></div>
-</a>
+<a href="https://mntechdiversity.com/work/foundry/" target="_blank" class="diversitybadge"></a>
 
 {#  Hero image  }
 <div class="hero__image">
