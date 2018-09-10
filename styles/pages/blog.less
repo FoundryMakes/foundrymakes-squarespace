@@ -273,7 +273,6 @@
 
 .blog__pagination-text {
   font-family: @medium-font, @generic-fonts;
-  text-transform: uppercase;
   padding: 0;
   margin-left: 15px;
   margin-right: 15px;
@@ -281,11 +280,25 @@
     font-size: 3.5vw;
   }
   @media @for-tablet-portrait-up {
-    font-size: 2.5vw;
+    font-size: 1.75vw;
   }
 
   .blog__pagination-direction:nth-of-type(even) & {
     text-align: right;
+  }
+
+  small {
+    @media @for-phone-only { 
+      color: @blue;
+      font-size: 7vw;
+    }
+    @media @for-tablet-portrait-up { color: @red; }
+  }
+}
+
+.blog__pagination-arrow {
+  @media @for-tablet-portrait-up {
+    display: none;
   }
 }
 
