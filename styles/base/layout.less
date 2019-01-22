@@ -83,13 +83,7 @@
   overflow: hidden;
 
   @media @for-phone-only {
-    height: 40vh;
-    img {
-      max-height: 100%;
-    }
-  }
-  @media @for-small-phone-only {
-    height: 70vh;
+    min-height: 70vh;
   }
   @media @for-tablet-portrait-up {
     min-height: 60vw;
@@ -101,23 +95,8 @@
     }
   }
 
-  picture {
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
   img {
     display: block;
-    min-height: 100%;
-    min-width: 100%;
-    max-width: 150%;
-    max-height: 150%;
   }
 }
 
