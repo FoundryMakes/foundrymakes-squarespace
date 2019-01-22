@@ -82,7 +82,7 @@
           <div class="clients-carousel__tile">
             <img src="/assets/clients/logo__conservis-h.svg">
           </div>
-          <div class="clients-carousel__tile clients-carousel__tile--sm-height">
+          <div class="clients-carousel__tile">
             <img src="/assets/clients/logo__mia.svg">
           </div>
           <div class="clients-carousel__tile">
