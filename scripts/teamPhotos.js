@@ -3,38 +3,26 @@
 
   (function() {
     var teamPhotos = document.querySelector('.team-photos');
-    var hiddenImages = document.querySelector('.hidden-images');
-
     var request = new XMLHttpRequest();
     request.open('GET', '/team-photos?format=json', true);
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
         var data = JSON.parse(request.responseText);
-        var images = shuffle(data.items);
+        var images = shuffle(data.items).slice(0, 8);
 
-        var initialImages = images.slice(0, 8);
-        var initialElements = '';
+        images.forEach(function(item) {
+          var imageContainer = document.createElement('div');
+          imageContainer.className = 'tile';
 
-        var hiddenImages = images.slice(8);
-        var hiddenElements = '';
+          var image = document.createElement('img');
+          image.setAttribute('data-src', item.assetUrl);
 
-        initialImages.forEach(function(item, index) {
-          var image =
-            '<div class="tile"><img src="' +
-            item.assetUrl +
-            '?format=300w' +
-            '"><img class="hidden"></div>';
-          initialElements = initialElements + image;
+          imageContainer.appendChild(image);
+          teamPhotos.appendChild(imageContainer);
+
+          ImageLoader.load(image, { load: true });
         });
-
-        hiddenImages.forEach(function(item, index) {
-          var image = '<img data-src="' + item.assetUrl + '">';
-          hiddenElements = hiddenElements + image;
-        });
-
-        teamPhotos.innerHTML = initialElements;
-        hiddenImages.innerHTML = hiddenElements;
       } else {
         // We reached our target server, but it returned an error
       }

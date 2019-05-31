@@ -42,10 +42,8 @@
         <squarespace:block-field id="about__team-description" columns="12" lock-layout="true"/>
       </div>
 
-      {#  Team photos  }
-      <div class="team-photos scroll-reveal">
-        <div class="hidden-images"></div>
-      </div>
+      {#  Team photos - Injected by JS }
+      <div class="team-photos scroll-reveal"></div>
 
       {#  Services section  }
       <div class="text-container util__pb-5">
