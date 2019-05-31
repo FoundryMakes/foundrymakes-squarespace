@@ -23,6 +23,7 @@
           var image =
             '<div class="tile"><img src="' +
             item.assetUrl +
+            '?format=300w' +
             '"><img class="hidden"></div>';
           initialElements = initialElements + image;
         });
