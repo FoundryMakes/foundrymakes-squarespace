@@ -70,7 +70,7 @@
       <div class="clients-carousel">
         <div class="clients-carousel__row">
           <div class="clients-carousel__tile">
-            <img data-src="/assets/clients/logo__cl-2.jpeg">
+            <img data-src="/assets/clients/logo__cl.jpeg">
           </div>
           <div class="clients-carousel__tile">
             <img data-src="/assets/clients/logo__love-your-melon.svg">
@@ -87,7 +87,7 @@
             <img data-src="/assets/clients/logo__mia.svg">
           </div>
           <div class="clients-carousel__tile">
-            <img data-src="/assets/clients/logo__us-bank-2.png">
+            <img data-src="/assets/clients/logo__us-bank.png">
           </div>
         </div>
         <div class="clients-carousel__row">
