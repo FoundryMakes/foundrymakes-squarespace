@@ -4,8 +4,9 @@
   "description": "a Squarespace template for Foundry",
   "main": "site.region",
   "scripts": {
-    "bs": "browser-sync start --proxy 'http://localhost:9000' --reload-delay 2000 --no-open --files 'collections' 'blocks' 'assets' 'scripts' 'styles' '*.region'",
-    "dev": "parallelshell 'squarespace-server https://foundrymakes-ss.squarespace.com --auth' 'npm run bs'"
+    "sync": "browser-sync start --proxy 'http://localhost:9000' --reload-delay 2000 --no-open --files 'collections' 'blocks' 'assets' 'scripts' 'styles' '*.region'",
+    "serve": "squarespace-server https://foundrymakes-ss.squarespace.com --auth",
+    "dev": "parallelshell 'npm run serve' 'npm run sync'"
   },
   "repository": {
     "type": "git",

@@ -42,10 +42,8 @@
         <squarespace:block-field id="about__team-description" columns="12" lock-layout="true"/>
       </div>
 
-      {#  Team photos  }
-      <div class="team-photos scroll-reveal">
-        <div class="hidden-images"></div>
-      </div>
+      {#  Team photos - Injected by JS }
+      <div class="team-photos scroll-reveal"></div>
 
       {#  Services section  }
       <div class="text-container util__pb-5">
@@ -64,17 +62,17 @@
         
         <div class="leadership-photos">
           <div class="leadership-photos__tile scroll-reveal">
-            <img src="/assets/images/leadership__kurt.jpg" style="transform: rotate(7deg)" />
+            <img data-src="/assets/images/leadership__kurt.jpg" style="transform: rotate(7deg)" />
             <h2><strong>Kurt Schmidt</strong></h2>
             <h3>President</h3>
           </div>
           <div class="leadership-photos__tile scroll-reveal">
-            <img src="/assets/images/leadership__nils.jpg" />
+            <img data-src="/assets/images/leadership__nils.jpg" />
             <h2><strong>Nils Hansen</strong></h2>
             <h3>Principal, Creative</h3>
           </div>
           <div class="leadership-photos__tile scroll-reveal">
-            <img src="/assets/images/leadership__robert.jpg" />
+            <img data-src="/assets/images/leadership__robert.jpg" />
             <h2><strong>Robert Nelson</strong></h2>
             <h3>Principal, Technology</h3>
           </div>

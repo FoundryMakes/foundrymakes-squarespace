@@ -66,38 +66,39 @@
       </div>
 
       {#  Client logos carousel  }
+      {#  Uses the data-src attribute to take advantage of the squarespace loader's deferred load - but does not actually perform resize because they are "local" assets }
       <div class="clients-carousel">
         <div class="clients-carousel__row">
           <div class="clients-carousel__tile">
-            <img src="/assets/clients/logo__cl.jpeg">
+            <img data-src="/assets/clients/logo__cl.jpeg">
           </div>
           <div class="clients-carousel__tile">
-            <img src="/assets/clients/logo__love-your-melon.svg">
+            <img data-src="/assets/clients/logo__love-your-melon.svg">
           </div>
           <div class="clients-carousel__tile">
-            <img src="/assets/clients/logo__parade-of-homes-text.svg">
-          </div>
-        </div>
-        <div class="clients-carousel__row">
-          <div class="clients-carousel__tile">
-            <img src="/assets/clients/logo__conservis-h.svg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img src="/assets/clients/logo__mia.svg">
-          </div>
-          <div class="clients-carousel__tile">
-            <img src="/assets/clients/logo__us-bank.png">
+            <img data-src="/assets/clients/logo__parade-of-homes-text.svg">
           </div>
         </div>
         <div class="clients-carousel__row">
           <div class="clients-carousel__tile">
-            <img src="/assets/clients/logo__sleep-number.svg">
+            <img data-src="/assets/clients/logo__conservis-h.svg">
           </div>
           <div class="clients-carousel__tile">
-            <img src="/assets/clients/logo__vidscrip.svg">
+            <img data-src="/assets/clients/logo__mia.svg">
           </div>
           <div class="clients-carousel__tile">
-            <img src="/assets/clients/logo__foodsby.svg">
+            <img data-src="/assets/clients/logo__us-bank.png">
+          </div>
+        </div>
+        <div class="clients-carousel__row">
+          <div class="clients-carousel__tile">
+            <img data-src="/assets/clients/logo__sleep-number.svg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img data-src="/assets/clients/logo__vidscrip.svg">
+          </div>
+          <div class="clients-carousel__tile">
+            <img data-src="/assets/clients/logo__foodsby.svg">
           </div>
         </div>
       </div>
