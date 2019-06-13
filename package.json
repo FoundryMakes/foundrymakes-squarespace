@@ -15,7 +15,7 @@
   "author": "Jason Spidle",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.24.5",
+    "browser-sync": "^2.26.7",
     "parallelshell": "^3.0.2"
   }
 }
