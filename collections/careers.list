@@ -19,6 +19,7 @@
     <squarespace:block-field id="careers__caption-title" columns="12" lock-layout="true"/>
     <squarespace:block-field id="careers__caption-body" columns="12" lock-layout="true"/>
     <hr class="rule__blue">
+    <hr>
 </div>
 
 <div class="careers__list">
