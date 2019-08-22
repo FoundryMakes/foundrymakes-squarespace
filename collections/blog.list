@@ -40,16 +40,14 @@
 <nav class="pagination">
   <div class="pagination__div">
     {.if pagination.prevPage}
-    <a class="pagination__container" href="{pagination.prevPageUrl}">
-      <div class="pagination__text left__arrow">← Previous Page</div>
-    </a>
+      <a class="pagination__container" href="{pagination.prevPageUrl}">
+        <div class="pagination__text left__arrow">← Previous Page</div>
+      </a>
     {.end}
-  </div>
-  <div class="pagination__div">
     {.if pagination.nextPage}
-    <a class="pagination__container" href="{pagination.nextPageUrl}">
-      <div class="pagination__text right__arrow">Next Page →</div>
-    </a>
+      <a class="pagination__container" href="{pagination.nextPageUrl}">
+        <div class="pagination__text right__arrow">Next Page →</div>
+      </a>
     {.end}
   </div>
 </nav>
