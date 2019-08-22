@@ -41,14 +41,14 @@
   <div class="pagination__div">
     {.if pagination.prevPage}
     <a class="pagination__container" href="{pagination.prevPageUrl}">
-      <div class="pagination__text">Next Page →</div>
+      <div class="pagination__text left__arrow">← Previous Page</div>
     </a>
     {.end}
   </div>
   <div class="pagination__div">
     {.if pagination.nextPage}
-    <a style="justify-content:flex-end;" class="pagination__container" href="{pagination.nextPageUrl}">
-      <div class="pagination__text">← Previous Page</div>
+    <a class="pagination__container" href="{pagination.nextPageUrl}">
+      <div class="pagination__text right__arrow">Next Page →</div>
     </a>
     {.end}
   </div>
